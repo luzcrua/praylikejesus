@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "title": "Descubra Como Orar Como Jesus e Transforme Sua Vida Espiritual",
+    "subtitle": "Receba orações exclusivas 100% GRATUITAS para se conectar profundamente com Deus",
+    "cta": "QUERO COMEÇAR MINHA JORNADA DE ORAÇÃO"
+  },
+  "benefits": {
+    "title": "Por que Orar como Jesus?",
+    "connection": {
+      "title": "Conexão Profunda",
+      "description": "Desenvolva uma intimidade única com Deus através da oração"
+    },
+    "transformation": {
+      "title": "Transformação Interior",
+      "description": "Experimente mudanças reais em sua vida espiritual"
+    },
+    "miracles": {
+      "title": "Experiências Milagrosas",
+      "description": "Vivencie o poder sobrenatural da oração em sua vida"
+    }
+  },
+  "devotional": {
+    "title": "Devocional Diário",
+    "cta": "RECEBER DEVOCIONAIS DIÁRIOS GRATUITOS"
+  },
+  "guide": {
+    "title": "Guia Completo de Oração",
+    "ebook": {
+      "title": "E-book Gratuito",
+      "description": "Baixe nosso guia completo com técnicas e exemplos práticos de oração para transformar sua vida espiritual",
+      "cta": "BAIXAR GUIA DE ORAÇÃO GRATUITO"
+    },
+    "tips": {
+      "title": "Dicas Exclusivas",
+      "description": "Receba dicas práticas e insights poderosos para fortalecer sua conexão espiritual através da oração",
+      "cta": "RECEBER DICAS PODEROSAS DE ORAÇÃO"
+    }
+  },
+  "transformation": {
+    "title": "Transforme Sua Vida Através da Oração",
+    "items": [
+      "Maior paz interior e clareza mental",
+      "Fortalecimento da fé e confiança em Deus",
+      "Desenvolvimento de uma rotina de oração efetiva",
+      "Superação de obstáculos através da oração",
+      "Crescimento espiritual acelerado",
+      "Conexão mais profunda com Deus"
+    ],
+    "cta": "QUERO TRANSFORMAR MINHA VIDA ATRAVÉS DA ORAÇÃO"
+  },
+  "testimonials": {
+    "title": "Vidas Transformadas",
+    "items": [
+      {
+        "name": "Maria Silva",
+        "text": "Depois que aprendi a orar como Jesus, minha vida espiritual ganhou um novo significado."
+      },
+      {
+        "name": "João Santos",
+        "text": "As orações exclusivas me ajudaram a desenvolver uma conexão mais profunda com Deus."
+      },
+      {
+        "name": "Ana Oliveira",
+        "text": "Nunca imaginei que poderia ter uma vida de oração tão poderosa. Sou muito grata!"
+      }
+    ]
+  },
+  "form": {
+    "title": "Receba Suas Orações Exclusivas",
+    "name": {
+      "label": "Nome",
+      "placeholder": "Seu nome",
+      "error": "O nome deve ter pelo menos 2 caracteres."
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "seu@email.com",
+      "error": "Por favor, insira um email válido."
+    },
+    "submit": "COMEÇAR MINHA JORNADA DE ORAÇÃO AGORA",
+    "submitting": "ENVIANDO...",
+    "success": "Inscrição realizada!",
+    "successMessage": "Você receberá nossas orações em breve.",
+    "error": "Erro ao realizar inscrição",
+    "errorMessage": "Por favor, tente novamente mais tarde."
+  },
+  "footer": {
+    "rights": "© 2024 Ore Como Jesus. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso"
+  }
+}

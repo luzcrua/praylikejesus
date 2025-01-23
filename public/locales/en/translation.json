@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "title": "Discover How to Pray Like Jesus and Transform Your Spiritual Life",
+    "subtitle": "Receive exclusive 100% FREE prayers to connect deeply with God",
+    "cta": "I WANT TO START MY PRAYER JOURNEY"
+  },
+  "benefits": {
+    "title": "Why Pray like Jesus?",
+    "connection": {
+      "title": "Deep Connection",
+      "description": "Develop a unique intimacy with God through prayer"
+    },
+    "transformation": {
+      "title": "Inner Transformation",
+      "description": "Experience real changes in your spiritual life"
+    },
+    "miracles": {
+      "title": "Miraculous Experiences",
+      "description": "Experience the supernatural power of prayer in your life"
+    }
+  },
+  "devotional": {
+    "title": "Daily Devotional",
+    "cta": "RECEIVE FREE DAILY DEVOTIONALS"
+  },
+  "guide": {
+    "title": "Complete Prayer Guide",
+    "ebook": {
+      "title": "Free E-book",
+      "description": "Download our complete guide with practical techniques and examples to transform your spiritual life",
+      "cta": "DOWNLOAD FREE PRAYER GUIDE"
+    },
+    "tips": {
+      "title": "Exclusive Tips",
+      "description": "Receive practical tips and powerful insights to strengthen your spiritual connection through prayer",
+      "cta": "RECEIVE POWERFUL PRAYER TIPS"
+    }
+  },
+  "transformation": {
+    "title": "Transform Your Life Through Prayer",
+    "items": [
+      "Greater inner peace and mental clarity",
+      "Strengthening faith and trust in God",
+      "Development of an effective prayer routine",
+      "Overcoming obstacles through prayer",
+      "Accelerated spiritual growth",
+      "Deeper connection with God"
+    ],
+    "cta": "I WANT TO TRANSFORM MY LIFE THROUGH PRAYER"
+  },
+  "testimonials": {
+    "title": "Transformed Lives",
+    "items": [
+      {
+        "name": "Mary Smith",
+        "text": "After learning to pray like Jesus, my spiritual life gained new meaning."
+      },
+      {
+        "name": "John Sanders",
+        "text": "The exclusive prayers helped me develop a deeper connection with God."
+      },
+      {
+        "name": "Anna Oliver",
+        "text": "I never imagined I could have such a powerful prayer life. I'm so grateful!"
+      }
+    ]
+  },
+  "form": {
+    "title": "Receive Your Exclusive Prayers",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name",
+      "error": "Name must be at least 2 characters long."
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com",
+      "error": "Please enter a valid email."
+    },
+    "submit": "START MY PRAYER JOURNEY NOW",
+    "submitting": "SENDING...",
+    "success": "Registration completed!",
+    "successMessage": "You will receive our prayers soon.",
+    "error": "Registration error",
+    "errorMessage": "Please try again later."
+  },
+  "footer": {
+    "rights": "© 2024 Pray Like Jesus. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  }
+}
