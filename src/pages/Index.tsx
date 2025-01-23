@@ -26,8 +26,12 @@ const formSchema = z.object({
   }),
 });
 
+const ZAPIER_WEBHOOK_URL = "YOUR_ZAPIER_WEBHOOK_URL"; // Users will need to replace this with their webhook URL
+
 const Index = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -37,31 +41,47 @@ const Index = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    if (!ZAPIER_WEBHOOK_URL || ZAPIER_WEBHOOK_URL === "YOUR_ZAPIER_WEBHOOK_URL") {
+      toast({
+        title: "Erro de Configuração",
+        description: "Por favor, configure a URL do webhook do Zapier primeiro.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    console.log("Enviando dados para o Zapier:", values);
+
     try {
-      const response = await fetch("/api/subscribe", {
+      const response = await fetch(ZAPIER_WEBHOOK_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values),
+        mode: "no-cors", // Necessário para webhooks do Zapier
+        body: JSON.stringify({
+          ...values,
+          timestamp: new Date().toISOString(),
+          source: window.location.origin,
+        }),
       });
 
-      if (!response.ok) {
-        throw new Error("Erro ao se inscrever");
-      }
-
       toast({
-        title: "Inscrição realizada com sucesso!",
+        title: "Inscrição realizada!",
         description: "Você receberá nossas orações em breve.",
       });
 
       form.reset();
     } catch (error) {
+      console.error("Erro ao enviar dados:", error);
       toast({
         variant: "destructive",
         title: "Erro ao realizar inscrição",
         description: "Por favor, tente novamente mais tarde.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -221,8 +241,13 @@ const Index = () => {
                     </FormItem>
                   )}
                 />
-                <ShinyButton type="submit" variant="neon" className="w-full">
-                  Quero Orar Como Jesus!
+                <ShinyButton 
+                  type="submit" 
+                  variant="neon" 
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Enviando..." : "Quero Orar Como Jesus!"}
                 </ShinyButton>
               </form>
             </Form>
