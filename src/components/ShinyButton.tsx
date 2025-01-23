@@ -28,6 +28,9 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
           "disabled:opacity-50 disabled:cursor-not-allowed",
           getVariantStyles(),
           "transform hover:scale-105 active:scale-95",
+          "flex items-center justify-center gap-2",
+          "border border-white/10 backdrop-blur-sm",
+          "text-lg tracking-wide",
           className
         )}
         {...props}
