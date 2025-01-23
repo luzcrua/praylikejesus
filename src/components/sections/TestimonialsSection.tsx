@@ -4,7 +4,7 @@ const TestimonialsSection = () => {
   return (
     <section className="relative py-20">
       <div className="absolute inset-0 bg-[url('/lovable-uploads/4bf0c246-5410-41d7-a50e-65e7b1cfe25d.png')] bg-cover bg-center opacity-20" />
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="container relative z-10 px-4">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
           Vidas Transformadas

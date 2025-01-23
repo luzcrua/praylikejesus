@@ -5,7 +5,7 @@ const DevotionalSection = () => {
   return (
     <section className="relative py-20">
       <div className="absolute inset-0 bg-[url('/lovable-uploads/67c83adf-d794-4c6e-a56c-db6d99a5094a.png')] bg-cover bg-center opacity-20" />
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/50" />
       <div className="container relative z-10 px-4">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-8">
           Devocional Diário
