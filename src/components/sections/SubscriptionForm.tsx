@@ -66,7 +66,6 @@ const SubscriptionForm = () => {
         }),
       });
 
-      // Track successful form submission
       trackFormSubmission(values);
 
       toast({
@@ -78,7 +77,6 @@ const SubscriptionForm = () => {
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
       
-      // Track form error
       trackEvent({
         action: 'form_error',
         category: 'Error',
@@ -115,7 +113,7 @@ const SubscriptionForm = () => {
                     <FormControl>
                       <Input placeholder="Seu nome" {...field} />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
@@ -128,7 +126,7 @@ const SubscriptionForm = () => {
                     <FormControl>
                       <Input placeholder="seu@email.com" {...field} />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
