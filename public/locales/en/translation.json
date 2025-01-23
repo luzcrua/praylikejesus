@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "title": "Discover How to Pray Like Jesus and Transform Your Spiritual Life",
+    "subtitle": "Receive exclusive 100% FREE prayers to connect deeply with God",
+    "cta": "I WANT TO START MY PRAYER JOURNEY"
+  },
+  "benefits": {
+    "title": "Why Pray like Jesus?",
+    "connection": {
+      "title": "Deep Connection",
+      "description": "Develop a unique intimacy with God through prayer"
+    },
+    "transformation": {
+      "title": "Inner Transformation",
+      "description": "Experience real changes in your spiritual life"
+    },
+    "miracles": {
+      "title": "Miraculous Experiences",
+      "description": "Experience the supernatural power of prayer in your life"
+    }
+  },
+  "devotional": {
+    "title": "Daily Devotional",
+    "quote": "\"Our Father who art in heaven, hallowed be thy name...\"",
+    "cta": "RECEIVE FREE DAILY DEVOTIONALS"
+  },
+  "testimonials": {
+    "title": "Transformed Lives",
+    "testimonial1": {
+      "name": "Mary Smith",
+      "text": "After learning to pray like Jesus, my spiritual life gained new meaning."
+    },
+    "testimonial2": {
+      "name": "John Santos",
+      "text": "The exclusive prayers helped me develop a deeper connection with God."
+    },
+    "testimonial3": {
+      "name": "Anna Oliver",
+      "text": "I never imagined I could have such a powerful prayer life. I'm so grateful!"
+    }
+  },
+  "form": {
+    "title": "Receive Your Exclusive Prayers",
+    "name": "Name",
+    "email": "Email",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "submit": "START MY PRAYER JOURNEY NOW",
+    "success": "Registration completed!",
+    "successMessage": "You will receive our prayers soon.",
+    "error": "Error during registration",
+    "errorMessage": "Please try again later.",
+    "validation": {
+      "nameRequired": "Name must be at least 2 characters long.",
+      "emailRequired": "Please enter a valid email."
+    }
+  },
+  "footer": {
+    "rights": "© 2024 Pray Like Jesus. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "languageSelector": {
+    "pt": "Português",
+    "en": "English"
+  }
+}

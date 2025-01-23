@@ -6,10 +6,12 @@ import SubscriptionForm from "@/components/sections/SubscriptionForm";
 import Footer from "@/components/Footer";
 import PrayerGuideSection from "@/components/sections/PrayerGuideSection";
 import TransformationSection from "@/components/sections/TransformationSection";
+import LanguageSelector from "@/components/LanguageSelector";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-black/95">
+      <LanguageSelector />
       <HeroSection />
       <BenefitsSection />
       <DevotionalSection />
