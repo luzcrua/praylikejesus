@@ -1,9 +1,70 @@
 import { Heart, Hand, Sparkles, Star, BookOpen, Users } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 import BenefitCard from "@/components/BenefitCard";
 import ShinyButton from "@/components/ShinyButton";
 import TestimonialCard from "@/components/TestimonialCard";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+
+const formSchema = z.object({
+  name: z.string().min(2, {
+    message: "O nome deve ter pelo menos 2 caracteres.",
+  }),
+  email: z.string().email({
+    message: "Por favor, insira um email válido.",
+  }),
+});
 
 const Index = () => {
+  const { toast } = useToast();
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+    },
+  });
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao se inscrever");
+      }
+
+      toast({
+        title: "Inscrição realizada com sucesso!",
+        description: "Você receberá nossas orações em breve.",
+      });
+
+      form.reset();
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Erro ao realizar inscrição",
+        description: "Por favor, tente novamente mais tarde.",
+      });
+    }
+  }
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -132,35 +193,39 @@ const Index = () => {
             <h2 className="text-3xl font-serif font-bold text-primary text-center mb-8">
               Receba Suas Orações Exclusivas
             </h2>
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-gray-700 mb-2">
-                  Nome
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-transparent"
-                  placeholder="Seu nome"
-                  required
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Nome</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Seu nome" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-gray-700 mb-2">
-                  E-mail
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-transparent"
-                  placeholder="seu@email.com"
-                  required
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>E-mail</FormLabel>
+                      <FormControl>
+                        <Input placeholder="seu@email.com" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
-              </div>
-              <ShinyButton type="submit" variant="neon" className="w-full">
-                Quero Orar Como Jesus!
-              </ShinyButton>
-            </form>
+                <ShinyButton type="submit" variant="neon" className="w-full">
+                  Quero Orar Como Jesus!
+                </ShinyButton>
+              </form>
+            </Form>
           </div>
         </div>
       </section>
