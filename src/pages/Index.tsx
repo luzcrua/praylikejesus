@@ -1,4 +1,4 @@
-import { Heart, Hands, Sparkles } from "lucide-react";
+import { Heart, Hand, Sparkles } from "lucide-react";
 import BenefitCard from "@/components/BenefitCard";
 import ShinyButton from "@/components/ShinyButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -33,7 +33,7 @@ const Index = () => {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <BenefitCard
-              icon={Hands}
+              icon={Hand}
               title="Conexão Profunda"
               description="Desenvolva uma intimidade única com Deus através da oração"
             />
