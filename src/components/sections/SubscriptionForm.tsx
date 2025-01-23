@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import ShinyButton from "@/components/ShinyButton";
+import { useAnalytics } from "@/hooks/useAnalytics";
 import {
   Form,
   FormControl,
@@ -28,6 +29,7 @@ const ZAPIER_WEBHOOK_URL = "YOUR_ZAPIER_WEBHOOK_URL";
 const SubscriptionForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { trackFormSubmission, trackEvent } = useAnalytics();
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -64,6 +66,9 @@ const SubscriptionForm = () => {
         }),
       });
 
+      // Track successful form submission
+      trackFormSubmission(values);
+
       toast({
         title: "Inscrição realizada!",
         description: "Você receberá nossas orações em breve.",
@@ -72,6 +77,14 @@ const SubscriptionForm = () => {
       form.reset();
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
+      
+      // Track form error
+      trackEvent({
+        action: 'form_error',
+        category: 'Error',
+        label: error instanceof Error ? error.message : 'Unknown error'
+      });
+
       toast({
         variant: "destructive",
         title: "Erro ao realizar inscrição",
