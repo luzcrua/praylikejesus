@@ -37,7 +37,7 @@ const TransformationSection = () => {
               onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
               className="group"
             >
-              Transforme Sua Vida Através da Oração
+              QUERO TRANSFORMAR MINHA VIDA ATRAVÉS DA ORAÇÃO →
               <ArrowRight className="w-4 h-4 ml-2 inline-block group-hover:translate-x-1 transition-transform" />
             </ShinyButton>
           </div>

@@ -20,7 +20,7 @@ const DevotionalSection = () => {
             className="mx-auto"
             onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Quero Receber Devocionais Diários
+            RECEBER DEVOCIONAIS DIÁRIOS GRATUITOS →
           </ShinyButton>
         </div>
       </div>

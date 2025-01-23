@@ -22,8 +22,7 @@ const PrayerGuideSection = () => {
               className="w-full"
               onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
             >
-              <Download className="w-4 h-4 mr-2 inline-block" />
-              Receber Guia de Oração Gratuito
+              BAIXAR GUIA DE ORAÇÃO GRATUITO →
             </ShinyButton>
           </div>
           <div className="bg-white/5 backdrop-blur-lg p-8 rounded-xl border border-white/10 hover:border-neon-pink/30 transition-all duration-300 group">
@@ -37,7 +36,7 @@ const PrayerGuideSection = () => {
               className="w-full"
               onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Quero Dicas Poderosas de Oração
+              RECEBER DICAS PODEROSAS DE ORAÇÃO →
             </ShinyButton>
           </div>
         </div>

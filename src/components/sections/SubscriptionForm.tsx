@@ -125,7 +125,7 @@ const SubscriptionForm = () => {
                 className="w-full"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Enviando..." : "Quero Orar Como Jesus!"}
+                {isSubmitting ? "ENVIANDO..." : "COMEÇAR MINHA JORNADA DE ORAÇÃO AGORA →"}
               </ShinyButton>
             </form>
           </Form>
