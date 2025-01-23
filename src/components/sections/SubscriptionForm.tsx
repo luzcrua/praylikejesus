@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import ShinyButton from "@/components/ShinyButton";
 import { useAnalytics } from "@/hooks/useAnalytics";
+import { useTranslation } from "react-i18next";
 import {
   Form,
   FormControl,
@@ -15,22 +16,23 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "O nome deve ter pelo menos 2 caracteres.",
-  }),
-  email: z.string().email({
-    message: "Por favor, insira um email válido.",
-  }),
-});
-
 const ZAPIER_WEBHOOK_URL = "YOUR_ZAPIER_WEBHOOK_URL";
 
 const SubscriptionForm = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { trackFormSubmission, trackEvent } = useAnalytics();
   
+  const formSchema = z.object({
+    name: z.string().min(2, {
+      message: t('form.validation.nameRequired'),
+    }),
+    email: z.string().email({
+      message: t('form.validation.emailRequired'),
+    }),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -42,8 +44,8 @@ const SubscriptionForm = () => {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     if (!ZAPIER_WEBHOOK_URL || ZAPIER_WEBHOOK_URL === "YOUR_ZAPIER_WEBHOOK_URL") {
       toast({
-        title: "Erro de Configuração",
-        description: "Por favor, configure a URL do webhook do Zapier primeiro.",
+        title: t('form.error'),
+        description: t('form.errorMessage'),
         variant: "destructive",
       });
       return;
@@ -69,8 +71,8 @@ const SubscriptionForm = () => {
       trackFormSubmission(values);
 
       toast({
-        title: "Inscrição realizada!",
-        description: "Você receberá nossas orações em breve.",
+        title: t('form.success'),
+        description: t('form.successMessage'),
       });
 
       form.reset();
@@ -85,8 +87,8 @@ const SubscriptionForm = () => {
 
       toast({
         variant: "destructive",
-        title: "Erro ao realizar inscrição",
-        description: "Por favor, tente novamente mais tarde.",
+        title: t('form.error'),
+        description: t('form.errorMessage'),
       });
     } finally {
       setIsSubmitting(false);
@@ -100,7 +102,7 @@ const SubscriptionForm = () => {
       <div className="container relative z-10 px-4">
         <div className="max-w-xl mx-auto bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-xl">
           <h2 className="text-3xl font-serif font-bold text-primary text-center mb-8">
-            Receba Suas Orações Exclusivas
+            {t('form.title')}
           </h2>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -109,9 +111,9 @@ const SubscriptionForm = () => {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-white">Nome</FormLabel>
+                    <FormLabel className="text-white">{t('form.name')}</FormLabel>
                     <FormControl>
-                      <Input placeholder="Seu nome" {...field} />
+                      <Input placeholder={t('form.namePlaceholder')} {...field} />
                     </FormControl>
                     <FormMessage className="text-red-400" />
                   </FormItem>
@@ -122,9 +124,9 @@ const SubscriptionForm = () => {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-white">E-mail</FormLabel>
+                    <FormLabel className="text-white">{t('form.email')}</FormLabel>
                     <FormControl>
-                      <Input placeholder="seu@email.com" {...field} />
+                      <Input placeholder={t('form.emailPlaceholder')} {...field} />
                     </FormControl>
                     <FormMessage className="text-red-400" />
                   </FormItem>
@@ -136,7 +138,7 @@ const SubscriptionForm = () => {
                 className="w-full"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "ENVIANDO..." : "COMEÇAR MINHA JORNADA DE ORAÇÃO AGORA →"}
+                {isSubmitting ? "ENVIANDO..." : t('form.submit')}
               </ShinyButton>
             </form>
           </Form>
