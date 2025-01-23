@@ -5,6 +5,15 @@ type EventParams = {
   value?: number;
 };
 
+// Declare fbq function type
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+    fbq: (...args: any[]) => void;
+    dataLayer: any[];
+  }
+}
+
 export const useAnalytics = () => {
   const trackEvent = ({ action, category = 'Interaction', label, value }: EventParams) => {
     // Google Analytics Event
@@ -18,7 +27,7 @@ export const useAnalytics = () => {
 
     // Facebook Pixel Event
     if (window.fbq) {
-      fbq('track', action, {
+      window.fbq('track', action, {
         content_category: category,
         content_name: label,
         value: value,
@@ -41,7 +50,7 @@ export const useAnalytics = () => {
 
     // Facebook Pixel
     if (window.fbq) {
-      fbq('track', 'Lead', {
+      window.fbq('track', 'Lead', {
         content_name: 'Prayer Subscription',
         content_category: 'Form'
       });
@@ -55,12 +64,3 @@ export const useAnalytics = () => {
     trackFormSubmission
   };
 };
-
-// Add window interface extensions
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-    fbq: (...args: any[]) => void;
-    dataLayer: any[];
-  }
-}

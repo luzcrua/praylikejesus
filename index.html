@@ -33,14 +33,15 @@
       fbq('init', 'SUBSTITUA_PELO_SEU_ID_PIXEL');
       fbq('track', 'PageView');
     </script>
+  </head>
+
+  <body>
+    <!-- Meta Pixel Noscript -->
     <noscript>
       <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=SUBSTITUA_PELO_SEU_ID_PIXEL&ev=PageView&noscript=1"/>
     </noscript>
-    <!-- End Meta Pixel Code -->
-  </head>
-
-  <body>
+    
     <div id="root"></div>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
