@@ -189,15 +189,15 @@ const Index = () => {
               Junte-se a milhares de pessoas que estão transformando suas vidas através da oração
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center">
+              <div className="bg-black/80 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center text-white">
                 <Star className="w-8 h-8 text-gold mx-auto mb-2" />
                 <h3 className="font-bold text-2xl text-primary">5000+</h3>
-                <p className="text-gray-600">Membros Ativos</p>
+                <p className="text-gray-300">Membros Ativos</p>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center">
+              <div className="bg-black/80 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center text-white">
                 <Heart className="w-8 h-8 text-gold mx-auto mb-2" />
                 <h3 className="font-bold text-2xl text-primary">10000+</h3>
-                <p className="text-gray-600">Orações Compartilhadas</p>
+                <p className="text-gray-300">Orações Compartilhadas</p>
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[url('/lovable-uploads/4bf0c246-5410-41d7-a50e-65e7b1cfe25d.png')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-black/60" />
         <div className="container relative z-10 px-4">
-          <div className="max-w-xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-xl">
+          <div className="max-w-xl mx-auto bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-xl">
             <h2 className="text-3xl font-serif font-bold text-primary text-center mb-8">
               Receba Suas Orações Exclusivas
             </h2>
@@ -220,7 +220,7 @@ const Index = () => {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nome</FormLabel>
+                      <FormLabel className="text-white">Nome</FormLabel>
                       <FormControl>
                         <Input placeholder="Seu nome" {...field} />
                       </FormControl>
@@ -233,7 +233,7 @@ const Index = () => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>E-mail</FormLabel>
+                      <FormLabel className="text-white">E-mail</FormLabel>
                       <FormControl>
                         <Input placeholder="seu@email.com" {...field} />
                       </FormControl>
