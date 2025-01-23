@@ -15,8 +15,12 @@ const DevotionalSection = () => {
           <p className="text-xl mb-8 text-white">
             "Pai nosso que estás nos céus, santificado seja o teu nome..."
           </p>
-          <ShinyButton variant="neon" className="mx-auto">
-            Receber Devocional Diário
+          <ShinyButton 
+            variant="neon" 
+            className="mx-auto"
+            onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Quero Receber Devocionais Diários
           </ShinyButton>
         </div>
       </div>

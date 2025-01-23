@@ -17,9 +17,13 @@ const PrayerGuideSection = () => {
             <p className="text-gray-300 mb-6">
               Baixe nosso guia completo com técnicas e exemplos práticos de oração para transformar sua vida espiritual.
             </p>
-            <ShinyButton variant="neon" className="w-full">
+            <ShinyButton 
+              variant="neon" 
+              className="w-full"
+              onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
+            >
               <Download className="w-4 h-4 mr-2 inline-block" />
-              Baixar Guia Gratuito
+              Receber Guia de Oração Gratuito
             </ShinyButton>
           </div>
           <div className="bg-white/5 backdrop-blur-lg p-8 rounded-xl border border-white/10 hover:border-neon-pink/30 transition-all duration-300 group">
@@ -28,8 +32,12 @@ const PrayerGuideSection = () => {
             <p className="text-gray-300 mb-6">
               Receba dicas práticas e insights poderosos para fortalecer sua conexão espiritual através da oração.
             </p>
-            <ShinyButton variant="neon" className="w-full">
-              Receber Dicas Exclusivas
+            <ShinyButton 
+              variant="neon" 
+              className="w-full"
+              onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Quero Dicas Poderosas de Oração
             </ShinyButton>
           </div>
         </div>

@@ -15,7 +15,7 @@ const HeroSection = () => {
           variant="neon"
           onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
         >
-          Receber Orações Agora
+          Comece Sua Jornada de Oração
         </ShinyButton>
       </div>
     </section>
