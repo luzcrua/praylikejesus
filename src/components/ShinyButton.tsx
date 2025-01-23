@@ -22,8 +22,10 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "relative px-8 py-4 rounded-full font-bold text-white overflow-hidden transition-all",
+          "relative px-8 py-4 rounded-full font-bold text-white overflow-hidden transition-all duration-300",
           "before:absolute before:inset-0 before:bg-gradient-to-r before:animate-shine",
+          "hover:shadow-[0_0_30px_rgba(139,92,246,0.8)]",
+          "disabled:opacity-50 disabled:cursor-not-allowed",
           getVariantStyles(),
           "transform hover:scale-105 active:scale-95",
           className

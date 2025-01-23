@@ -23,30 +23,50 @@ export default {
         sans: ["Inter", "sans-serif"],
       },
       colors: {
+        neon: {
+          purple: "#8B5CF6",
+          pink: "#D946EF",
+          blue: "#0EA5E9",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#1E40AF",
-          light: "#60A5FA",
-          dark: "#1E3A8A",
-        },
-        gold: {
-          DEFAULT: "#F59E0B",
-          light: "#FCD34D",
-          dark: "#D97706",
+          DEFAULT: "#9b87f5",
+          light: "#D6BCFA",
+          dark: "#7E69AB",
         },
       },
       keyframes: {
+        "fade-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
         shine: {
           "0%": { backgroundPosition: "200% center" },
           "100%": { backgroundPosition: "-200% center" },
         },
+        pulse: {
+          "0%, 100%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0.5",
+          },
+        },
       },
       animation: {
+        "fade-up": "fade-up 0.5s ease-out",
         shine: "shine 8s ease infinite",
+        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },
