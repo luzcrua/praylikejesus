@@ -24,6 +24,31 @@
     "quote": "\"Pai nosso que estás nos céus, santificado seja o teu nome...\"",
     "cta": "RECEBER DEVOCIONAIS DIÁRIOS GRATUITOS"
   },
+  "prayerGuide": {
+    "title": "Guia Completo de Oração",
+    "ebook": {
+      "title": "E-book Gratuito",
+      "description": "Baixe nosso guia completo com técnicas e exemplos práticos de oração para transformar sua vida espiritual.",
+      "cta": "BAIXAR GUIA DE ORAÇÃO GRATUITO →"
+    },
+    "tips": {
+      "title": "Dicas Exclusivas",
+      "description": "Receba dicas práticas e insights poderosos para fortalecer sua conexão espiritual através da oração.",
+      "cta": "RECEBER DICAS PODEROSAS DE ORAÇÃO →"
+    }
+  },
+  "transformation": {
+    "title": "Transforme Sua Vida Através da Oração",
+    "benefits": [
+      "Maior paz interior e clareza mental",
+      "Fortalecimento da fé e confiança em Deus",
+      "Desenvolvimento de uma rotina de oração efetiva",
+      "Superação de obstáculos através da oração",
+      "Crescimento espiritual acelerado",
+      "Conexão mais profunda com Deus"
+    ],
+    "cta": "QUERO TRANSFORMAR MINHA VIDA ATRAVÉS DA ORAÇÃO →"
+  },
   "testimonials": {
     "title": "Vidas Transformadas",
     "testimonial1": {

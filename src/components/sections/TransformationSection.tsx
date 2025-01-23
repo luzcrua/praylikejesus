@@ -1,15 +1,10 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import ShinyButton from "@/components/ShinyButton";
+import { useTranslation } from "react-i18next";
 
 const TransformationSection = () => {
-  const transformations = [
-    "Maior paz interior e clareza mental",
-    "Fortalecimento da fé e confiança em Deus",
-    "Desenvolvimento de uma rotina de oração efetiva",
-    "Superação de obstáculos através da oração",
-    "Crescimento espiritual acelerado",
-    "Conexão mais profunda com Deus"
-  ];
+  const { t } = useTranslation();
+  const transformations = t('transformation.benefits', { returnObjects: true }) as string[];
 
   return (
     <section className="relative py-20">
@@ -17,7 +12,7 @@ const TransformationSection = () => {
       <div className="absolute inset-0 bg-black/80" />
       <div className="container relative z-10 px-4">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-          Transforme Sua Vida Através da Oração
+          {t('transformation.title')}
         </h2>
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -37,7 +32,7 @@ const TransformationSection = () => {
               onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
               className="group"
             >
-              QUERO TRANSFORMAR MINHA VIDA ATRAVÉS DA ORAÇÃO →
+              {t('transformation.cta')}
               <ArrowRight className="w-4 h-4 ml-2 inline-block group-hover:translate-x-1 transition-transform" />
             </ShinyButton>
           </div>

@@ -24,6 +24,31 @@
     "quote": "\"Our Father who art in heaven, hallowed be thy name...\"",
     "cta": "RECEIVE FREE DAILY DEVOTIONALS"
   },
+  "prayerGuide": {
+    "title": "Complete Prayer Guide",
+    "ebook": {
+      "title": "Free E-book",
+      "description": "Download our complete guide with practical prayer techniques and examples to transform your spiritual life.",
+      "cta": "DOWNLOAD FREE PRAYER GUIDE →"
+    },
+    "tips": {
+      "title": "Exclusive Tips",
+      "description": "Receive practical tips and powerful insights to strengthen your spiritual connection through prayer.",
+      "cta": "RECEIVE POWERFUL PRAYER TIPS →"
+    }
+  },
+  "transformation": {
+    "title": "Transform Your Life Through Prayer",
+    "benefits": [
+      "Greater inner peace and mental clarity",
+      "Strengthening of faith and trust in God",
+      "Development of an effective prayer routine",
+      "Overcoming obstacles through prayer",
+      "Accelerated spiritual growth",
+      "Deeper connection with God"
+    ],
+    "cta": "I WANT TO TRANSFORM MY LIFE THROUGH PRAYER →"
+  },
   "testimonials": {
     "title": "Transformed Lives",
     "testimonial1": {
