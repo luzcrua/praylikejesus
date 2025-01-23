@@ -8,7 +8,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-[url('/lovable-uploads/5b858674-cf70-49e4-8a6f-49d95e787f76.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-primary/70" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="container relative z-10 px-4 py-32 text-center text-white">
           <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
             Descubra Como Orar Como Jesus e Transforme Sua Vida Espiritual
@@ -52,8 +52,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* New Section: Daily Devotional */}
-      <section className="relative py-20 bg-primary/5">
+      {/* Daily Devotional Section */}
+      <section className="relative py-20">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/67c83adf-d794-4c6e-a56c-db6d99a5094a.png')] bg-cover bg-center opacity-10" />
         <div className="container relative z-10 px-4">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-8">
             Devocional Diário
@@ -72,7 +73,7 @@ const Index = () => {
 
       {/* Testimonials Section */}
       <section className="relative py-20">
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/67c83adf-d794-4c6e-a56c-db6d99a5094a.png')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/4bf0c246-5410-41d7-a50e-65e7b1cfe25d.png')] bg-cover bg-center opacity-10" />
         <div className="container relative z-10 px-4">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
             Vidas Transformadas
@@ -94,8 +95,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* New Section: Community */}
-      <section className="relative py-20 bg-primary/5">
+      {/* Community Section */}
+      <section className="relative py-20">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/4e107723-5ad3-4aee-abe0-1d443825b87c.png')] bg-cover bg-center opacity-10" />
         <div className="container relative z-10 px-4">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-8">
             Comunidade de Oração
@@ -124,7 +126,7 @@ const Index = () => {
       {/* Form Section */}
       <section id="form" className="relative py-20">
         <div className="absolute inset-0 bg-[url('/lovable-uploads/4bf0c246-5410-41d7-a50e-65e7b1cfe25d.png')] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-primary/80" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="container relative z-10 px-4">
           <div className="max-w-xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-xl">
             <h2 className="text-3xl font-serif font-bold text-primary text-center mb-8">
