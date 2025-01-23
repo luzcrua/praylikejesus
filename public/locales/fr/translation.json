@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "title": "Découvrez Comment Prier Comme Jésus et Transformez Votre Vie Spirituelle",
+    "subtitle": "Recevez des prières exclusives 100% GRATUITES pour vous connecter profondément avec Dieu",
+    "cta": "JE VEUX COMMENCER MON PARCOURS DE PRIÈRE"
+  },
+  "benefits": {
+    "title": "Pourquoi Prier comme Jésus ?",
+    "connection": {
+      "title": "Connexion Profonde",
+      "description": "Développez une intimité unique avec Dieu à travers la prière"
+    },
+    "transformation": {
+      "title": "Transformation Intérieure",
+      "description": "Expérimentez des changements réels dans votre vie spirituelle"
+    },
+    "miracles": {
+      "title": "Expériences Miraculeuses",
+      "description": "Expérimentez le pouvoir surnaturel de la prière dans votre vie"
+    }
+  },
+  "devotional": {
+    "title": "Dévotion Quotidienne",
+    "quote": "\"Notre Père qui es aux cieux, que ton nom soit sanctifié...\"",
+    "cta": "RECEVOIR DES DÉVOTIONS QUOTIDIENNES GRATUITES"
+  },
+  "prayerGuide": {
+    "title": "Guide Complet de Prière",
+    "ebook": {
+      "title": "E-book Gratuit",
+      "description": "Téléchargez notre guide complet avec des techniques et des exemples pratiques de prière pour transformer votre vie spirituelle.",
+      "cta": "TÉLÉCHARGER LE GUIDE DE PRIÈRE GRATUIT →"
+    },
+    "tips": {
+      "title": "Conseils Exclusifs",
+      "description": "Recevez des conseils pratiques et des idées puissantes pour renforcer votre connexion spirituelle à travers la prière.",
+      "cta": "RECEVOIR DES CONSEILS PUISSANTS DE PRIÈRE →"
+    }
+  },
+  "transformation": {
+    "title": "Transformez Votre Vie Par la Prière",
+    "benefits": [
+      "Plus de paix intérieure et de clarté mentale",
+      "Renforcement de la foi et de la confiance en Dieu",
+      "Développement d'une routine de prière efficace",
+      "Surmonter les obstacles par la prière",
+      "Croissance spirituelle accélérée",
+      "Connexion plus profonde avec Dieu"
+    ],
+    "cta": "JE VEUX TRANSFORMER MA VIE PAR LA PRIÈRE →"
+  },
+  "testimonials": {
+    "title": "Vies Transformées",
+    "testimonial1": {
+      "name": "Marie Dubois",
+      "text": "Après avoir appris à prier comme Jésus, ma vie spirituelle a pris un nouveau sens."
+    },
+    "testimonial2": {
+      "name": "Jean Martin",
+      "text": "Les prières exclusives m'ont aidé à développer une connexion plus profonde avec Dieu."
+    },
+    "testimonial3": {
+      "name": "Anne Laurent",
+      "text": "Je n'aurais jamais imaginé pouvoir avoir une vie de prière aussi puissante. Je suis très reconnaissante !"
+    }
+  },
+  "form": {
+    "title": "Recevez Vos Prières Exclusives",
+    "name": "Nom",
+    "email": "E-mail",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "vous@email.com",
+    "submit": "COMMENCER MON PARCOURS DE PRIÈRE MAINTENANT",
+    "success": "Inscription réussie !",
+    "successMessage": "Vous recevrez nos prières bientôt.",
+    "error": "Erreur lors de l'inscription",
+    "errorMessage": "Veuillez réessayer plus tard.",
+    "validation": {
+      "nameRequired": "Le nom doit contenir au moins 2 caractères.",
+      "emailRequired": "Veuillez entrer un e-mail valide."
+    }
+  },
+  "footer": {
+    "rights": "© 2024 Priez Comme Jésus. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "languageSelector": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français"
+  }
+}

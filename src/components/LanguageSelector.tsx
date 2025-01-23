@@ -19,6 +19,7 @@ const LanguageSelector = () => {
         <option value="pt">{t('languageSelector.pt')}</option>
         <option value="en">{t('languageSelector.en')}</option>
         <option value="es">{t('languageSelector.es')}</option>
+        <option value="fr">{t('languageSelector.fr')}</option>
       </select>
     </div>
   );
