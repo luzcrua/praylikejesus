@@ -11,7 +11,7 @@ const DevotionalSection = () => {
           Devocional Diário
         </h2>
         <div className="max-w-3xl mx-auto text-center">
-          <BookOpen className="w-16 h-16 text-gold mx-auto mb-6" />
+          <BookOpen className="w-16 h-16 text-neon-purple mx-auto mb-6 animate-pulse" />
           <p className="text-xl mb-8 text-white">
             "Pai nosso que estás nos céus, santificado seja o teu nome..."
           </p>
