@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "title": "Descubre Cómo Orar Como Jesús y Transforma Tu Vida Espiritual",
+    "subtitle": "Recibe oraciones exclusivas 100% GRATUITAS para conectarte profundamente con Dios",
+    "cta": "QUIERO COMENZAR MI JORNADA DE ORACIÓN"
+  },
+  "benefits": {
+    "title": "¿Por qué Orar como Jesús?",
+    "connection": {
+      "title": "Conexión Profunda",
+      "description": "Desarrolla una intimidad única con Dios a través de la oración"
+    },
+    "transformation": {
+      "title": "Transformación Interior",
+      "description": "Experimenta cambios reales en tu vida espiritual"
+    },
+    "miracles": {
+      "title": "Experiencias Milagrosas",
+      "description": "Experimenta el poder sobrenatural de la oración en tu vida"
+    }
+  },
+  "devotional": {
+    "title": "Devocional Diario",
+    "quote": "\"Padre nuestro que estás en los cielos, santificado sea tu nombre...\"",
+    "cta": "RECIBIR DEVOCIONALES DIARIOS GRATUITOS"
+  },
+  "prayerGuide": {
+    "title": "Guía Completa de Oración",
+    "ebook": {
+      "title": "E-book Gratuito",
+      "description": "Descarga nuestra guía completa con técnicas y ejemplos prácticos de oración para transformar tu vida espiritual.",
+      "cta": "DESCARGAR GUÍA DE ORACIÓN GRATUITA →"
+    },
+    "tips": {
+      "title": "Consejos Exclusivos",
+      "description": "Recibe consejos prácticos e ideas poderosas para fortalecer tu conexión espiritual a través de la oración.",
+      "cta": "RECIBIR CONSEJOS PODEROSOS DE ORACIÓN →"
+    }
+  },
+  "transformation": {
+    "title": "Transforma Tu Vida A Través de la Oración",
+    "benefits": [
+      "Mayor paz interior y claridad mental",
+      "Fortalecimiento de la fe y confianza en Dios",
+      "Desarrollo de una rutina efectiva de oración",
+      "Superación de obstáculos a través de la oración",
+      "Crecimiento espiritual acelerado",
+      "Conexión más profunda con Dios"
+    ],
+    "cta": "QUIERO TRANSFORMAR MI VIDA A TRAVÉS DE LA ORACIÓN →"
+  },
+  "testimonials": {
+    "title": "Vidas Transformadas",
+    "testimonial1": {
+      "name": "María Silva",
+      "text": "Después de aprender a orar como Jesús, mi vida espiritual cobró un nuevo significado."
+    },
+    "testimonial2": {
+      "name": "Juan Santos",
+      "text": "Las oraciones exclusivas me ayudaron a desarrollar una conexión más profunda con Dios."
+    },
+    "testimonial3": {
+      "name": "Ana Oliveira",
+      "text": "¡Nunca imaginé que podría tener una vida de oración tan poderosa. Estoy muy agradecida!"
+    }
+  },
+  "form": {
+    "title": "Recibe Tus Oraciones Exclusivas",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "tu@email.com",
+    "submit": "COMENZAR MI JORNADA DE ORACIÓN AHORA",
+    "success": "¡Registro completado!",
+    "successMessage": "Recibirás nuestras oraciones pronto.",
+    "error": "Error durante el registro",
+    "errorMessage": "Por favor, inténtalo de nuevo más tarde.",
+    "validation": {
+      "nameRequired": "El nombre debe tener al menos 2 caracteres.",
+      "emailRequired": "Por favor, ingresa un correo electrónico válido."
+    }
+  },
+  "footer": {
+    "rights": "© 2024 Ora Como Jesús. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
+  },
+  "languageSelector": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  }
+}
