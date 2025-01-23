@@ -23,16 +23,17 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
         ref={ref}
         className={cn(
           "relative px-8 py-4 rounded-full font-bold text-white overflow-hidden transition-all duration-300",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:animate-shine",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:animate-shine before:-z-10",
           "hover:shadow-[0_0_30px_rgba(139,92,246,0.8)]",
           "disabled:opacity-50 disabled:cursor-not-allowed",
           getVariantStyles(),
           "transform hover:scale-105 active:scale-95",
+          "z-10 whitespace-normal text-sm md:text-base",
           className
         )}
         {...props}
       >
-        {children}
+        <span className="relative z-10">{children}</span>
       </button>
     );
   }
