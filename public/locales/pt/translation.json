@@ -80,16 +80,15 @@
       "audioInstruction": "Prepare seu coração e ouça atentamente a mensagem abaixo",
       "audioUrl": "https://drive.google.com/file/d/1dQr-9BzcjAZtoSUgZGP-hSNYKZIP9cUO/preview",
       "buttonText": "ENTRE NO NOSSO CANAL DO TELEGRAM",
-      "buttonUrl": "https://t.me/luzrua"
+      "buttonUrl": "https://t.me/luzrua",
+      "loading": "Carregando áudio..."
     },
-    "error": "Erro ao realizar inscrição",
+    "error": "Erro durante o registro",
     "errorMessage": "Por favor, tente novamente mais tarde.",
     "validation": {
       "nameRequired": "O nome deve ter pelo menos 2 caracteres.",
       "emailRequired": "Por favor, insira um email válido.",
-      "emailInvalid": "Por favor, use um email de um provedor conhecido (Gmail, Outlook, Yahoo, iCloud, etc).",
-      "countryRequired": "Por favor, insira seu país.",
-      "termsRequired": "Você precisa aceitar os termos para continuar."
+      "countryRequired": "Por favor, insira seu país."
     },
     "termsText": "Concordo em receber emails promocionais e autorizo o uso dos meus dados para fins de marketing, de acordo com a Política de Privacidade.",
     "helpButton": "Dificuldades para preencher? Entre em contato",
@@ -102,7 +101,11 @@
   },
   "languageSelector": {
     "pt": "Português",
-    "en": "English"
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "de": "Deutsch"
   },
   "cookies": {
     "title": "Nós usamos cookies",

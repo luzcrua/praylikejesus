@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { useTranslation } from "react-i18next";
@@ -9,12 +9,16 @@ import { submitToMailchimp, type SubscriptionData } from "@/services/mailchimpSe
 import SubscriptionFormFields from "@/components/form/SubscriptionFormFields";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ShinyButton from "@/components/ShinyButton";
+import { Loader2 } from "lucide-react";
 
 const SubscriptionForm = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
+  const [isAudioLoading, setIsAudioLoading] = useState(true);
+  const [showTelegramButton, setShowTelegramButton] = useState(false);
+  const audioRef = useRef<HTMLIFrameElement>(null);
   const { trackFormSubmission, trackEvent } = useAnalytics();
 
   const form = useForm<SubscriptionFormData>({
@@ -26,6 +30,25 @@ const SubscriptionForm = () => {
       acceptTerms: false,
     },
   });
+
+  useEffect(() => {
+    if (showSuccessDialog) {
+      // Reset states when dialog opens
+      setIsAudioLoading(true);
+      setShowTelegramButton(false);
+
+      // Start timer for Telegram button
+      const timer = setTimeout(() => {
+        setShowTelegramButton(true);
+      }, 10000); // 10 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccessDialog]);
+
+  const handleIframeLoad = () => {
+    setIsAudioLoading(false);
+  };
 
   const onSubmit = async (values: SubscriptionFormData) => {
     setIsSubmitting(true);
@@ -119,26 +142,38 @@ const SubscriptionForm = () => {
                 </div>
               </div>
 
-              <div className="w-full max-w-md mx-auto mb-4 md:mb-6 animate-fade-up" style={{animationDelay: "0.6s"}}>
+              <div className="w-full max-w-md mx-auto mb-4 md:mb-6 animate-fade-up relative" style={{animationDelay: "0.6s"}}>
+                {isAudioLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+                    <div className="text-center">
+                      <Loader2 className="h-8 w-8 animate-spin text-neon-purple mx-auto mb-2" />
+                      <p className="text-sm text-white/90">Carregando áudio...</p>
+                    </div>
+                  </div>
+                )}
                 {showSuccessDialog && (
                   <iframe 
+                    ref={audioRef}
                     src={t('form.success.audioUrl')}
                     width="100%" 
                     height="100" 
                     allow="autoplay"
                     className="rounded-lg shadow-lg"
+                    onLoad={handleIframeLoad}
                   />
                 )}
               </div>
 
-              <ShinyButton
-                variant="neon"
-                onClick={handleContinue}
-                className="w-full max-w-md mx-auto text-sm sm:text-base animate-fade-up"
-                style={{animationDelay: "0.8s"}}
-              >
-                {t('form.success.buttonText')}
-              </ShinyButton>
+              {showTelegramButton && (
+                <ShinyButton
+                  variant="neon"
+                  onClick={handleContinue}
+                  className="w-full max-w-md mx-auto text-sm sm:text-base animate-fade-up"
+                  style={{animationDelay: "0.8s"}}
+                >
+                  {t('form.success.buttonText')}
+                </ShinyButton>
+              )}
             </div>
           </div>
         </DialogContent>

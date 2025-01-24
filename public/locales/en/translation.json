@@ -80,7 +80,8 @@
       "audioInstruction": "Prepare your heart and listen carefully to the message below",
       "audioUrl": "https://drive.google.com/file/d/1dQr-9BzcjAZtoSUgZGP-hSNYKZIP9cUO/preview",
       "buttonText": "JOIN OUR TELEGRAM CHANNEL",
-      "buttonUrl": "https://t.me/rawlightofficial"
+      "buttonUrl": "https://t.me/rawlightofficial",
+      "loading": "Loading audio..."
     },
     "error": "Error during registration",
     "errorMessage": "Please try again later.",

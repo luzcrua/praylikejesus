@@ -73,8 +73,16 @@
     "emailPlaceholder": "vous@email.com",
     "countryPlaceholder": "Votre pays",
     "submit": "COMMENCER MON PARCOURS DE PRIÈRE MAINTENANT",
-    "success": "Inscription réussie !",
-    "successMessage": "Vous recevrez nos prières bientôt.",
+    "success": {
+      "title": "Il Tuo Viaggio Spirituale Inizia Ora",
+      "subtitle": "Stai per iniziare un viaggio trasformativo di connessione con Dio attraverso la preghiera.",
+      "audioMessage": "🎧 Il Tuo Primo Messaggio Speciale",
+      "audioInstruction": "Prepara il tuo cuore e ascolta attentamente il messaggio qui sotto",
+      "audioUrl": "https://drive.google.com/file/d/1ZzIG5XdTJTeAtqRUFNv94qKVzFv_bAyV/preview",
+      "buttonText": "UNISCITI AL NOSTRO CANALE TELEGRAM",
+      "buttonUrl": "https://t.me/lucecrudaoficial",
+      "loading": "Caricamento audio..."
+    },
     "error": "Erreur lors de l'inscription",
     "errorMessage": "Veuillez réessayer plus tard.",
     "validation": {
@@ -84,16 +92,7 @@
     },
     "termsText": "J'accepte de recevoir des e-mails promotionnels et j'autorise l'utilisation de mes données à des fins marketing, conformément à la Politique de Confidentialité.",
     "helpButton": "Des difficultés pour remplir ? Contactez-nous",
-    "helpEmail": "aide@priezcommejesus.com",
-    "success": {
-      "title": "Il Tuo Viaggio Spirituale Inizia Ora",
-      "subtitle": "Stai per iniziare un viaggio trasformativo di connessione con Dio attraverso la preghiera.",
-      "audioMessage": "🎧 Il Tuo Primo Messaggio Speciale",
-      "audioInstruction": "Prepara il tuo cuore e ascolta attentamente il messaggio qui sotto",
-      "audioUrl": "https://drive.google.com/file/d/1ZzIG5XdTJTeAtqRUFNv94qKVzFv_bAyV/preview",
-      "buttonText": "UNISCITI AL NOSTRO CANALE TELEGRAM",
-      "buttonUrl": "https://t.me/lucecrudaoficial"
-    }
+    "helpEmail": "aide@priezcommejesus.com"
   },
   "footer": {
     "rights": "© 2024 Priez Comme Jésus. Tous droits réservés.",
