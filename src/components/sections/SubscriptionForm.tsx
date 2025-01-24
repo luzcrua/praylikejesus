@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { createSubscriptionSchema, type SubscriptionFormData } from "@/schemas/subscriptionSchema";
 import { submitToMailchimp, type SubscriptionData } from "@/services/mailchimpService";
 import SubscriptionFormFields from "@/components/form/SubscriptionFormFields";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
 import ShinyButton from "@/components/ShinyButton";
 
 const SubscriptionForm = () => {
@@ -112,35 +112,59 @@ const SubscriptionForm = () => {
       </section>
 
       <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
-        <DialogContent className="bg-black/95 border-neon-purple text-white max-w-2xl">
-          <DialogHeader>
-            <DialogTitle className="text-3xl font-serif text-center text-primary mb-6">
-              PARABÉNS POR INICIAR A SUA JORNADA
-            </DialogTitle>
-          </DialogHeader>
-          <div className="flex flex-col items-center gap-6 py-4">
-            <p className="text-lg text-center mb-4">
-              ESCUTE ESSE ÁUDIO ABAIXO
-            </p>
-            <div className="w-full max-w-md mb-6">
-              {showSuccessDialog && (
-                <iframe 
-                  src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
-                  width="100%" 
-                  height="100" 
-                  allow="autoplay"
-                  className="rounded-lg"
-                  onLoad={handleIframeLoad}
-                />
-              )}
+        <DialogContent className="bg-black/95 border-neon-purple text-white max-w-3xl p-0 overflow-hidden">
+          <div className="relative">
+            {/* Background Image */}
+            <div 
+              className="absolute inset-0 bg-[url('/lovable-uploads/080a95bc-cc2a-45ec-a4e1-26f02a9731b3.png')] 
+                         bg-cover bg-center opacity-40"
+            />
+            
+            {/* Content Container */}
+            <div className="relative z-10 p-8 text-center space-y-6">
+              <div className="space-y-4">
+                <h2 className="text-4xl font-serif font-bold text-primary animate-fade-up">
+                  Sua Jornada Espiritual Começa Agora
+                </h2>
+                
+                <p className="text-xl text-white/90 font-light leading-relaxed animate-fade-up" style={{animationDelay: "0.2s"}}>
+                  Você está prestes a iniciar uma 
+                  <span className="text-neon-purple font-semibold"> transformadora jornada </span> 
+                  de conexão com Deus através da oração.
+                </p>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mt-6 animate-fade-up" style={{animationDelay: "0.4s"}}>
+                  <p className="text-lg font-medium text-neon-purple mb-2">
+                    🎧 Sua Primeira Mensagem Especial
+                  </p>
+                  <p className="text-white/80">
+                    Prepare seu coração e ouça com atenção a mensagem abaixo
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full max-w-md mx-auto mb-6 animate-fade-up" style={{animationDelay: "0.6s"}}>
+                {showSuccessDialog && (
+                  <iframe 
+                    src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
+                    width="100%" 
+                    height="100" 
+                    allow="autoplay"
+                    className="rounded-lg shadow-lg"
+                    onLoad={handleIframeLoad}
+                  />
+                )}
+              </div>
+
+              <ShinyButton
+                variant="neon"
+                onClick={() => setShowSuccessDialog(false)}
+                className="w-full max-w-md mx-auto animate-fade-up"
+                style={{animationDelay: "0.8s"}}
+              >
+                CONTINUAR MINHA JORNADA
+              </ShinyButton>
             </div>
-            <ShinyButton
-              variant="neon"
-              onClick={() => setShowSuccessDialog(false)}
-              className="w-full max-w-md"
-            >
-              CONTINUAR MINHA JORNADA
-            </ShinyButton>
           </div>
         </DialogContent>
       </Dialog>
