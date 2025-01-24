@@ -9,12 +9,14 @@ import SubscriptionForm from '@/components/sections/SubscriptionForm';
 import Footer from '@/components/Footer';
 import LanguageSelector from '@/components/LanguageSelector';
 import CookieConsent from '@/components/CookieConsent';
+import DynamicTitle from '@/components/DynamicTitle';
 
 const Index = () => {
   const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-black text-white">
+      <DynamicTitle />
       <LanguageSelector />
       <main>
         <HeroSection />
