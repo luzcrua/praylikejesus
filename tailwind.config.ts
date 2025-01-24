@@ -58,17 +58,19 @@ export default {
           "0%, 100%": {
             opacity: "1",
             transform: "scale(1)",
+            boxShadow: "0 0 15px rgba(139,92,246,0.2)",
           },
           "50%": {
-            opacity: "0.85",
-            transform: "scale(1.02)",
+            opacity: "0.95",
+            transform: "scale(1.01)",
+            boxShadow: "0 0 30px rgba(139,92,246,0.4)",
           },
         },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         shine: "shine 8s ease infinite",
-        pulse: "pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        pulse: "pulse 5s ease-in-out infinite",
       },
     },
   },
