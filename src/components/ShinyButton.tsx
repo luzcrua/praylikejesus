@@ -10,11 +10,11 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
     const getVariantStyles = () => {
       switch (variant) {
         case "neon":
-          return "before:from-[#D946EF] before:via-[#8B5CF6] before:to-[#D946EF] bg-[#8B5CF6] hover:bg-[#7C3AED] shadow-[0_0_15px_rgba(139,92,246,0.5)]";
+          return "before:from-transparent before:via-[#D946EF]/30 before:to-transparent bg-[#8B5CF6] hover:bg-[#7C3AED] shadow-[0_0_15px_rgba(139,92,246,0.5)]";
         case "gold":
-          return "before:from-gold-light before:via-gold before:to-gold-light bg-gold hover:bg-gold-dark";
+          return "before:from-transparent before:via-gold/30 before:to-transparent bg-gold hover:bg-gold-dark";
         default:
-          return "before:from-primary-light before:via-primary before:to-primary-light bg-primary hover:bg-primary-dark";
+          return "before:from-transparent before:via-primary-light/30 before:to-transparent bg-primary hover:bg-primary-dark";
       }
     };
 
@@ -23,7 +23,7 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
         ref={ref}
         className={cn(
           "relative px-8 py-4 rounded-full font-bold text-white overflow-hidden transition-all duration-300",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:animate-shine before:-z-10",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:animate-shine before:bg-[length:200%_100%]",
           "hover:shadow-[0_0_30px_rgba(139,92,246,0.8)]",
           "disabled:opacity-50 disabled:cursor-not-allowed",
           getVariantStyles(),
