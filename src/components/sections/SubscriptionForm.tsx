@@ -80,6 +80,7 @@ const SubscriptionForm = () => {
         title: t('form.error'),
         description: t('form.errorMessage'),
         variant: "destructive",
+        className: "bg-black border-red-500 text-red-500",
       });
       return;
     }
@@ -106,6 +107,7 @@ const SubscriptionForm = () => {
       toast({
         title: t('form.success'),
         description: t('form.successMessage'),
+        className: "bg-black border-neon-purple text-neon-purple font-semibold animate-shine shadow-[0_0_15px_rgba(139,92,246,0.5)]",
       });
 
       form.reset();
@@ -122,6 +124,7 @@ const SubscriptionForm = () => {
         variant: "destructive",
         title: t('form.error'),
         description: t('form.errorMessage'),
+        className: "bg-black border-red-500 text-red-500 font-semibold",
       });
     } finally {
       setIsSubmitting(false);
