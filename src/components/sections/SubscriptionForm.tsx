@@ -58,13 +58,6 @@ const SubscriptionForm = () => {
         category: 'Error',
         label: error instanceof Error ? error.message : 'Unknown error'
       });
-
-      toast({
-        variant: "destructive",
-        title: t('form.error'),
-        description: t('form.errorMessage'),
-        className: "bg-black border-red-500 text-red-500 font-semibold",
-      });
     } finally {
       setIsSubmitting(false);
     }
