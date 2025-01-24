@@ -29,14 +29,18 @@ const SubscriptionForm = () => {
     console.log("Enviando dados para o Mailchimp:", values);
 
     try {
-      const mailchimpData: SubscriptionData = {
-        name: values.name,
-        email: values.email,
-        country: values.country,
-        acceptTerms: values.acceptTerms
-      };
-
-      await submitToMailchimp(mailchimpData);
+      // Comentando temporariamente o envio real para o Mailchimp
+      // const mailchimpData: SubscriptionData = {
+      //   name: values.name,
+      //   email: values.email,
+      //   country: values.country,
+      //   acceptTerms: values.acceptTerms
+      // };
+      // await submitToMailchimp(mailchimpData);
+      
+      // Simulando sucesso
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
       trackFormSubmission(values);
 
       // Mensagem de agradecimento melhorada
@@ -50,7 +54,7 @@ const SubscriptionForm = () => {
           </div>
         ),
         className: "bg-black border-neon-purple text-neon-purple font-semibold animate-shine shadow-[0_0_15px_rgba(139,92,246,0.5)]",
-        duration: 6000, // Aumentando a duração para 6 segundos
+        duration: 6000,
       });
 
       form.reset();
