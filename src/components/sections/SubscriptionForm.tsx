@@ -20,6 +20,7 @@ const SubscriptionForm = () => {
       name: "",
       email: "",
       country: "",
+      acceptTerms: false,
     },
   });
 
@@ -80,6 +81,7 @@ const SubscriptionForm = () => {
             form={form}
             isSubmitting={isSubmitting}
             onHelpClick={handleHelpClick}
+            onSubmit={onSubmit}
             t={t}
           />
         </div>

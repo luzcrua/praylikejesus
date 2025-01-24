@@ -96,5 +96,10 @@
   "languageSelector": {
     "pt": "Português",
     "en": "English"
+  },
+  "cookies": {
+    "title": "Nós usamos cookies",
+    "description": "Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa Política de Privacidade.",
+    "accept": "Aceitar"
   }
 }
