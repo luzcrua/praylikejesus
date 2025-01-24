@@ -17,7 +17,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-const ZAPIER_WEBHOOK_URL = "YOUR_ZAPIER_WEBHOOK_URL";
+const MAILCHIMP_URL = "YOUR_MAILCHIMP_SERVER_PREFIX.api.mailchimp.com/3.0/lists/YOUR_LIST_ID/members";
+const MAILCHIMP_API_KEY = "YOUR_API_KEY";
 
 // Lista de domínios de email permitidos
 const ALLOWED_EMAIL_DOMAINS = [
@@ -44,7 +45,7 @@ const SubscriptionForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { trackFormSubmission, trackEvent } = useAnalytics();
-  
+
   const formSchema = z.object({
     name: z.string().min(2, {
       message: t('form.validation.nameRequired'),
@@ -75,7 +76,7 @@ const SubscriptionForm = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    if (!ZAPIER_WEBHOOK_URL || ZAPIER_WEBHOOK_URL === "YOUR_ZAPIER_WEBHOOK_URL") {
+    if (!MAILCHIMP_URL || MAILCHIMP_URL.includes("YOUR_LIST_ID")) {
       toast({
         title: t('form.error'),
         description: t('form.errorMessage'),
@@ -86,21 +87,28 @@ const SubscriptionForm = () => {
     }
 
     setIsSubmitting(true);
-    console.log("Enviando dados para o Zapier:", values);
+    console.log("Enviando dados para o Mailchimp:", values);
 
     try {
-      const response = await fetch(ZAPIER_WEBHOOK_URL, {
+      const response = await fetch(MAILCHIMP_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Authorization": `apikey ${MAILCHIMP_API_KEY}`,
         },
-        mode: "no-cors",
         body: JSON.stringify({
-          ...values,
-          timestamp: new Date().toISOString(),
-          source: window.location.origin,
+          email_address: values.email,
+          status: "subscribed",
+          merge_fields: {
+            FNAME: values.name,
+            COUNTRY: values.country
+          }
         }),
       });
+
+      if (!response.ok) {
+        throw new Error('Falha ao enviar para Mailchimp');
+      }
 
       trackFormSubmission(values);
 
