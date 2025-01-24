@@ -45,10 +45,7 @@ const SubscriptionForm = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       trackFormSubmission(values);
-
-      // Mostra o diálogo de sucesso
       setShowSuccessDialog(true);
-
       form.reset();
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
@@ -93,16 +90,21 @@ const SubscriptionForm = () => {
         </div>
       </section>
 
-      <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
-        <DialogContent className="bg-black/95 border-neon-purple text-white max-w-3xl p-0 overflow-hidden">
+      <Dialog 
+        open={showSuccessDialog} 
+        onOpenChange={() => {}} // Prevents dialog from closing when clicking outside or pressing ESC
+      >
+        <DialogContent 
+          className="bg-black/95 border-neon-purple text-white max-w-3xl p-0 overflow-hidden"
+          onPointerDownOutside={(e) => e.preventDefault()} // Prevents closing on click outside
+          onEscapeKeyDown={(e) => e.preventDefault()} // Prevents closing on ESC key
+        >
           <div className="relative">
-            {/* Background Image */}
             <div 
               className="absolute inset-0 bg-[url('/lovable-uploads/080a95bc-cc2a-45ec-a4e1-26f02a9731b3.png')] 
                          bg-cover bg-center opacity-40"
             />
             
-            {/* Content Container */}
             <div className="relative z-10 p-8 text-center space-y-6">
               <div className="space-y-4">
                 <h2 className="text-4xl font-serif font-bold text-primary animate-fade-up">
