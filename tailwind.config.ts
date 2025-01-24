@@ -54,6 +54,19 @@ export default {
           "0%": { backgroundPosition: "200% center" },
           "100%": { backgroundPosition: "-200% center" },
         },
+        "shine-inner": {
+          "0%": { 
+            backgroundPosition: "-200% center",
+            opacity: "0.3"
+          },
+          "50%": {
+            opacity: "0.6"
+          },
+          "100%": { 
+            backgroundPosition: "200% center",
+            opacity: "0.3"
+          },
+        },
         pulse: {
           "0%, 100%": {
             opacity: "1",
@@ -66,6 +79,7 @@ export default {
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         shine: "shine 8s ease infinite",
+        "shine-inner": "shine-inner 6s ease infinite",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
