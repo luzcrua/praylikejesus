@@ -49,20 +49,6 @@ const SubscriptionForm = () => {
       // Mostra o diálogo de sucesso
       setShowSuccessDialog(true);
 
-      // Toast de confirmação
-      toast({
-        title: t('form.success'),
-        description: (
-          <div className="flex flex-col gap-2">
-            <p>{values.name}, {t('form.successMessage')}</p>
-            <p className="text-sm">✨ {t('form.successDetails')}</p>
-            <p className="text-xs">📧 {t('form.checkEmail')}</p>
-          </div>
-        ),
-        className: "bg-black border-neon-purple text-neon-purple font-semibold animate-shine shadow-[0_0_15px_rgba(139,92,246,0.5)]",
-        duration: 6000,
-      });
-
       form.reset();
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
