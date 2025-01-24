@@ -1,0 +1,95 @@
+{
+  "languageSelector": {
+    "pt": "Portoghese",
+    "en": "Inglese",
+    "es": "Spagnolo",
+    "fr": "Francese",
+    "it": "Italiano"
+  },
+  "hero": {
+    "title": "Trasforma la Tua Vita Spirituale",
+    "subtitle": "Scopri il potere della preghiera quotidiana e rafforza il tuo legame con Dio attraverso la nostra guida devozionale.",
+    "cta": "Inizia il Tuo Viaggio Spirituale"
+  },
+  "benefits": {
+    "title": "Benefici della Preghiera Quotidiana",
+    "connection": {
+      "title": "Connessione Più Profonda",
+      "description": "Stabilisci una connessione più profonda e significativa con Dio attraverso la preghiera quotidiana."
+    },
+    "transformation": {
+      "title": "Trasformazione Personale",
+      "description": "Sperimenta una trasformazione positiva nella tua vita mentre cresci spiritualmente."
+    },
+    "miracles": {
+      "title": "Miracoli Quotidiani",
+      "description": "Testimonia i miracoli quotidiani che accadono attraverso il potere della preghiera."
+    }
+  },
+  "devotional": {
+    "title": "Guida Devozionale Quotidiana",
+    "quote": "La preghiera è la chiave del mattino e il chiavistello della sera.",
+    "cta": "Ricevi la Tua Guida"
+  },
+  "prayerGuide": {
+    "title": "La Tua Guida alla Preghiera",
+    "ebook": {
+      "title": "eBook Gratuito",
+      "description": "Scarica il nostro eBook gratuito con preghiere guidate e riflessioni quotidiane.",
+      "cta": "Scarica l'eBook"
+    },
+    "tips": {
+      "title": "Consigli di Preghiera",
+      "description": "Ricevi consigli quotidiani per migliorare la tua vita di preghiera.",
+      "cta": "Ricevi i Consigli"
+    }
+  },
+  "transformation": {
+    "title": "Trasformazione Attraverso la Preghiera",
+    "benefits": [
+      "Maggiore pace interiore e serenità",
+      "Relazioni più forti con famiglia e amici",
+      "Chiarezza nella presa di decisioni",
+      "Aumento della fede e della fiducia",
+      "Miglioramento del benessere emotivo",
+      "Senso più profondo di scopo nella vita"
+    ],
+    "cta": "Inizia la Tua Trasformazione"
+  },
+  "testimonials": {
+    "title": "Testimonianze",
+    "testimonial1": {
+      "name": "Maria R.",
+      "text": "Questa guida devozionale ha completamente trasformato la mia vita di preghiera. Mi sento più vicina a Dio che mai."
+    },
+    "testimonial2": {
+      "name": "Giovanni B.",
+      "text": "Le preghiere guidate mi hanno aiutato a sviluppare una routine spirituale quotidiana che ha cambiato la mia vita."
+    },
+    "testimonial3": {
+      "name": "Lucia M.",
+      "text": "I consigli quotidiani sono esattamente ciò di cui avevo bisogno per approfondire la mia fede."
+    }
+  },
+  "form": {
+    "title": "Ricevi la Tua Guida Devozionale",
+    "name": "Nome",
+    "namePlaceholder": "Inserisci il tuo nome",
+    "email": "Email",
+    "emailPlaceholder": "Inserisci la tua email",
+    "submit": "RICEVI LA GUIDA",
+    "success": "Successo!",
+    "successMessage": "La tua guida devozionale è in arrivo nella tua casella email.",
+    "error": "Errore",
+    "errorMessage": "Si è verificato un errore. Per favore riprova più tardi.",
+    "validation": {
+      "nameRequired": "Il nome è obbligatorio",
+      "emailRequired": "Inserisci un indirizzo email valido"
+    }
+  },
+  "footer": {
+    "rights": "© 2024 Tutti i diritti riservati",
+    "privacy": "Privacy",
+    "terms": "Termini"
+  }
+}
