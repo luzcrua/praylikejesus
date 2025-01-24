@@ -104,13 +104,15 @@ const SubscriptionForm = () => {
             <p className="text-lg text-center mb-4">
               ESCUTE ESSE ÁUDIO ABAIXO
             </p>
-            <audio
-              controls
-              className="w-full max-w-md mb-6"
-              src="https://drive.google.com/uc?export=download&id=1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9"
-            >
-              Seu navegador não suporta o elemento de áudio.
-            </audio>
+            <div className="w-full max-w-md mb-6">
+              <iframe 
+                src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
+                width="100%" 
+                height="100" 
+                allow="autoplay"
+                className="rounded-lg"
+              />
+            </div>
             <ShinyButton
               variant="neon"
               onClick={() => setShowSuccessDialog(false)}
