@@ -29,6 +29,7 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
           getVariantStyles(),
           "transform hover:scale-105 active:scale-95",
           "z-10 whitespace-normal text-sm md:text-base",
+          "animate-[pulse_5s_ease-in-out_infinite]", // Added new animation
           className
         )}
         {...props}
