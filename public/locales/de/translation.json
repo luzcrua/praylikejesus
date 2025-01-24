@@ -81,7 +81,10 @@
       "nameRequired": "Der Name muss mindestens 2 Zeichen lang sein.",
       "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
       "countryRequired": "Bitte geben Sie Ihr Land ein."
-    }
+    },
+    "termsText": "Ich stimme dem Erhalt von Werbe-E-Mails zu und autorisiere die Verwendung meiner Daten für Marketingzwecke gemäß der Datenschutzerklärung.",
+    "helpButton": "Probleme beim Ausfüllen? Kontaktieren Sie uns",
+    "helpEmail": "hilfe@betewijesus.com"
   },
   "footer": {
     "rights": "© 2024 Beten wie Jesus. Alle Rechte vorbehalten.",
@@ -95,5 +98,10 @@
     "fr": "Français",
     "it": "Italiano",
     "de": "Deutsch"
+  },
+  "cookies": {
+    "title": "Wir verwenden Cookies",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Durch die weitere Nutzung stimmen Sie unserer Datenschutzerklärung zu.",
+    "accept": "Akzeptieren"
   }
 }

@@ -81,7 +81,10 @@
       "nameRequired": "El nombre debe tener al menos 2 caracteres.",
       "emailRequired": "Por favor, ingresa un correo electrónico válido.",
       "countryRequired": "Por favor, ingresa tu país."
-    }
+    },
+    "termsText": "Acepto recibir correos electrónicos promocionales y autorizo el uso de mis datos con fines de marketing, de acuerdo con la Política de Privacidad.",
+    "helpButton": "¿Problemas para completar? Contáctanos",
+    "helpEmail": "ayuda@oracomojesus.com"
   },
   "footer": {
     "rights": "© 2024 Ora Como Jesús. Todos los derechos reservados.",
@@ -92,5 +95,10 @@
     "pt": "Português",
     "en": "English",
     "es": "Español"
+  },
+  "cookies": {
+    "title": "Usamos cookies",
+    "description": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra Política de Privacidad.",
+    "accept": "Aceptar"
   }
 }

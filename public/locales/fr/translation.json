@@ -81,7 +81,10 @@
       "nameRequired": "Le nom doit contenir au moins 2 caractères.",
       "emailRequired": "Veuillez entrer un e-mail valide.",
       "countryRequired": "Veuillez entrer votre pays."
-    }
+    },
+    "termsText": "J'accepte de recevoir des e-mails promotionnels et j'autorise l'utilisation de mes données à des fins marketing, conformément à la Politique de Confidentialité.",
+    "helpButton": "Des difficultés pour remplir ? Contactez-nous",
+    "helpEmail": "aide@priezcommejesus.com"
   },
   "footer": {
     "rights": "© 2024 Priez Comme Jésus. Tous droits réservés.",
@@ -94,5 +97,10 @@
     "es": "Español",
     "fr": "Français",
     "it": "Italiano"
+  },
+  "cookies": {
+    "title": "Nous utilisons des cookies",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer, vous acceptez notre Politique de Confidentialité.",
+    "accept": "Accepter"
   }
 }

@@ -88,11 +88,19 @@
       "nameRequired": "Il nome è obbligatorio",
       "emailRequired": "Inserisci un indirizzo email valido",
       "countryRequired": "Inserisci il tuo paese"
-    }
+    },
+    "termsText": "Accetto di ricevere email promozionali e autorizzo l'uso dei miei dati per scopi di marketing, in conformità con la Privacy Policy.",
+    "helpButton": "Problemi nella compilazione? Contattaci",
+    "helpEmail": "aiuto@pregacomegesu.com"
   },
   "footer": {
     "rights": "© 2024 Tutti i diritti riservati",
     "privacy": "Privacy",
     "terms": "Termini"
+  },
+  "cookies": {
+    "title": "Utilizziamo i cookies",
+    "description": "Utilizziamo i cookies per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti la nostra Privacy Policy.",
+    "accept": "Accetta"
   }
 }
