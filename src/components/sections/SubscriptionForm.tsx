@@ -18,6 +18,26 @@ import * as z from "zod";
 
 const ZAPIER_WEBHOOK_URL = "YOUR_ZAPIER_WEBHOOK_URL";
 
+// Lista de domínios de email permitidos
+const ALLOWED_EMAIL_DOMAINS = [
+  "gmail.com",
+  "yahoo.com",
+  "yahoo.com.br",
+  "hotmail.com",
+  "outlook.com",
+  "live.com",
+  "icloud.com",
+  "me.com",
+  "mac.com",
+  "uol.com.br",
+  "bol.com.br",
+  "terra.com.br",
+  "ig.com.br",
+  "globo.com",
+  "protonmail.com",
+  "aol.com"
+];
+
 const SubscriptionForm = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
@@ -28,9 +48,17 @@ const SubscriptionForm = () => {
     name: z.string().min(2, {
       message: t('form.validation.nameRequired'),
     }),
-    email: z.string().email({
-      message: t('form.validation.emailRequired'),
-    }),
+    email: z
+      .string()
+      .email({
+        message: t('form.validation.emailRequired'),
+      })
+      .refine((email) => {
+        const domain = email.split('@')[1]?.toLowerCase();
+        return ALLOWED_EMAIL_DOMAINS.includes(domain);
+      }, {
+        message: t('form.validation.emailInvalid'),
+      }),
     country: z.string().min(2, {
       message: t('form.validation.countryRequired'),
     }),

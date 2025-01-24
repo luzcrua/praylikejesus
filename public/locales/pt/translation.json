@@ -80,6 +80,7 @@
     "validation": {
       "nameRequired": "O nome deve ter pelo menos 2 caracteres.",
       "emailRequired": "Por favor, insira um email válido.",
+      "emailInvalid": "Por favor, use um email de um provedor conhecido (Gmail, Outlook, Yahoo, iCloud, etc).",
       "countryRequired": "Por favor, insira seu país."
     }
   },
