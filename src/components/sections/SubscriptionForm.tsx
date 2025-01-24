@@ -72,6 +72,14 @@ const SubscriptionForm = () => {
     });
   };
 
+  const handleIframeLoad = () => {
+    toast({
+      title: "Áudio carregado!",
+      description: "Agora você pode ouvir a mensagem especial.",
+      duration: 3000,
+    });
+  };
+
   return (
     <>
       <section id="form" className="relative py-20">
@@ -105,13 +113,23 @@ const SubscriptionForm = () => {
               ESCUTE ESSE ÁUDIO ABAIXO
             </p>
             <div className="w-full max-w-md mb-6">
-              <iframe 
-                src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
-                width="100%" 
-                height="100" 
-                allow="autoplay"
-                className="rounded-lg"
-              />
+              {showSuccessDialog && (
+                <>
+                  {toast({
+                    title: "Carregando áudio...",
+                    description: "Por favor, aguarde um momento.",
+                    duration: 5000,
+                  })}
+                  <iframe 
+                    src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
+                    width="100%" 
+                    height="100" 
+                    allow="autoplay"
+                    className="rounded-lg"
+                    onLoad={handleIframeLoad}
+                  />
+                </>
+              )}
             </div>
             <ShinyButton
               variant="neon"
