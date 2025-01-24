@@ -72,24 +72,6 @@ const SubscriptionForm = () => {
     });
   };
 
-  const handleIframeLoad = () => {
-    toast({
-      title: "Áudio carregado!",
-      description: "Agora você pode ouvir a mensagem especial.",
-      duration: 3000,
-    });
-  };
-
-  useEffect(() => {
-    if (showSuccessDialog) {
-      toast({
-        title: "Carregando áudio...",
-        description: "Por favor, aguarde um momento.",
-        duration: 5000,
-      });
-    }
-  }, [showSuccessDialog, toast]);
-
   return (
     <>
       <section id="form" className="relative py-20">
@@ -151,7 +133,6 @@ const SubscriptionForm = () => {
                     height="100" 
                     allow="autoplay"
                     className="rounded-lg shadow-lg"
-                    onLoad={handleIframeLoad}
                   />
                 )}
               </div>
