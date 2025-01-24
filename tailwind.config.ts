@@ -55,22 +55,27 @@ export default {
           "100%": { backgroundPosition: "-200% center" },
         },
         pulse: {
-          "0%, 100%": {
+          "0%, 83.33%, 100%": {
             opacity: "1",
             transform: "scale(1)",
-            boxShadow: "0 0 15px rgba(139,92,246,0.2)",
+            boxShadow: "0 0 0px rgba(139,92,246,0)",
           },
-          "50%": {
+          "85%": {
             opacity: "0.95",
             transform: "scale(1.01)",
             boxShadow: "0 0 30px rgba(139,92,246,0.4)",
+          },
+          "90%": {
+            opacity: "1",
+            transform: "scale(1)",
+            boxShadow: "0 0 15px rgba(139,92,246,0.2)",
           },
         },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         shine: "shine 8s ease infinite",
-        pulse: "pulse 5s ease-in-out infinite",
+        pulse: "pulse 6s ease-in-out infinite",
       },
     },
   },
