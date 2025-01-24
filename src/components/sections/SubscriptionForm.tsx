@@ -7,11 +7,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { createSubscriptionSchema, type SubscriptionFormData } from "@/schemas/subscriptionSchema";
 import { submitToMailchimp, type SubscriptionData } from "@/services/mailchimpService";
 import SubscriptionFormFields from "@/components/form/SubscriptionFormFields";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import ShinyButton from "@/components/ShinyButton";
 
 const SubscriptionForm = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const { trackFormSubmission, trackEvent } = useAnalytics();
 
   const form = useForm<SubscriptionFormData>({
@@ -43,7 +46,10 @@ const SubscriptionForm = () => {
       
       trackFormSubmission(values);
 
-      // Mensagem de agradecimento melhorada
+      // Mostra o diálogo de sucesso
+      setShowSuccessDialog(true);
+
+      // Toast de confirmação
       toast({
         title: t('form.success'),
         description: (
@@ -88,24 +94,55 @@ const SubscriptionForm = () => {
   };
 
   return (
-    <section id="form" className="relative py-20">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/4bf0c246-5410-41d7-a50e-65e7b1cfe25d.png')] bg-cover bg-center opacity-20" />
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="container relative z-10 px-4">
-        <div className="max-w-xl mx-auto bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-xl">
-          <h2 className="text-3xl font-serif font-bold text-primary text-center mb-8">
-            {t('form.title')}
-          </h2>
-          <SubscriptionFormFields
-            form={form}
-            isSubmitting={isSubmitting}
-            onHelpClick={handleHelpClick}
-            onSubmit={onSubmit}
-            t={t}
-          />
+    <>
+      <section id="form" className="relative py-20">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/4bf0c246-5410-41d7-a50e-65e7b1cfe25d.png')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container relative z-10 px-4">
+          <div className="max-w-xl mx-auto bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-xl">
+            <h2 className="text-3xl font-serif font-bold text-primary text-center mb-8">
+              {t('form.title')}
+            </h2>
+            <SubscriptionFormFields
+              form={form}
+              isSubmitting={isSubmitting}
+              onHelpClick={handleHelpClick}
+              onSubmit={onSubmit}
+              t={t}
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
+        <DialogContent className="bg-black/95 border-neon-purple text-white max-w-2xl">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-serif text-center text-primary mb-6">
+              PARABÉNS POR INICIAR A SUA JORNADA
+            </DialogTitle>
+          </DialogHeader>
+          <div className="flex flex-col items-center gap-6 py-4">
+            <p className="text-lg text-center mb-4">
+              ESCUTE ESSE ÁUDIO ABAIXO
+            </p>
+            <audio
+              controls
+              className="w-full max-w-md mb-6"
+              src="https://drive.google.com/uc?export=download&id=1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9"
+            >
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <ShinyButton
+              variant="neon"
+              onClick={() => setShowSuccessDialog(false)}
+              className="w-full max-w-md"
+            >
+              CONTINUAR MINHA JORNADA
+            </ShinyButton>
+          </div>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 };
 
