@@ -1,22 +1,23 @@
-const MAILCHIMP_URL = "YOUR_MAILCHIMP_SERVER_PREFIX.api.mailchimp.com/3.0/lists/YOUR_LIST_ID/members";
-const MAILCHIMP_API_KEY = "YOUR_API_KEY";
-
-export interface SubscriptionData {
+interface SubscriptionData {
   name: string;
   email: string;
   country: string;
+  acceptTerms: boolean;
 }
 
 export const submitToMailchimp = async (data: SubscriptionData): Promise<Response> => {
-  if (!MAILCHIMP_URL || MAILCHIMP_URL.includes("YOUR_LIST_ID")) {
-    throw new Error("Mailchimp não está configurado corretamente");
-  }
+  const MAILCHIMP_SERVER = "us9"; // Seu servidor é us9 baseado na API key
+  const MAILCHIMP_LIST_ID = "54cfdb8af4"; // Seu Audience ID
+  const MAILCHIMP_URL = `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members`;
+
+  console.log("Enviando dados para Mailchimp:", { email: data.email, name: data.name, country: data.country });
 
   const response = await fetch(MAILCHIMP_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `apikey ${MAILCHIMP_API_KEY}`,
+      // A chave de API será adicionada via Supabase secrets
+      "Authorization": `Bearer ${import.meta.env.VITE_MAILCHIMP_API_KEY}`,
     },
     body: JSON.stringify({
       email_address: data.email,
@@ -29,8 +30,12 @@ export const submitToMailchimp = async (data: SubscriptionData): Promise<Respons
   });
 
   if (!response.ok) {
-    throw new Error('Falha ao enviar para Mailchimp');
+    const errorData = await response.json();
+    console.error("Erro Mailchimp:", errorData);
+    throw new Error(errorData.detail || 'Falha ao enviar para Mailchimp');
   }
 
   return response;
 };
+
+export type { SubscriptionData };
