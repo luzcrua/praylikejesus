@@ -147,7 +147,7 @@ const SubscriptionForm = () => {
                   <div className="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
                     <div className="text-center">
                       <Loader2 className="h-8 w-8 animate-spin text-neon-purple mx-auto mb-2" />
-                      <p className="text-sm text-white/90">Carregando áudio...</p>
+                      <p className="text-sm text-white/90">{t('form.success.loading')}</p>
                     </div>
                   </div>
                 )}
