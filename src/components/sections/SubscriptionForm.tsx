@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { useTranslation } from "react-i18next";
@@ -80,6 +80,16 @@ const SubscriptionForm = () => {
     });
   };
 
+  useEffect(() => {
+    if (showSuccessDialog) {
+      toast({
+        title: "Carregando áudio...",
+        description: "Por favor, aguarde um momento.",
+        duration: 5000,
+      });
+    }
+  }, [showSuccessDialog, toast]);
+
   return (
     <>
       <section id="form" className="relative py-20">
@@ -114,21 +124,14 @@ const SubscriptionForm = () => {
             </p>
             <div className="w-full max-w-md mb-6">
               {showSuccessDialog && (
-                <>
-                  {toast({
-                    title: "Carregando áudio...",
-                    description: "Por favor, aguarde um momento.",
-                    duration: 5000,
-                  })}
-                  <iframe 
-                    src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
-                    width="100%" 
-                    height="100" 
-                    allow="autoplay"
-                    className="rounded-lg"
-                    onLoad={handleIframeLoad}
-                  />
-                </>
+                <iframe 
+                  src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
+                  width="100%" 
+                  height="100" 
+                  allow="autoplay"
+                  className="rounded-lg"
+                  onLoad={handleIframeLoad}
+                />
               )}
             </div>
             <ShinyButton
