@@ -73,10 +73,15 @@
     "emailPlaceholder": "seu@email.com",
     "countryPlaceholder": "Seu país",
     "submit": "COMEÇAR MINHA JORNADA DE ORAÇÃO AGORA",
-    "success": "🙏 Bem-vindo à sua jornada espiritual!",
-    "successMessage": "estamos muito felizes em tê-lo conosco",
-    "successDetails": "Preparamos conteúdo especial para fortalecer sua vida de oração",
-    "checkEmail": "Por favor, verifique seu e-mail para receber nossas orações exclusivas",
+    "success": {
+      "title": "🙏 Sua Jornada Espiritual Começa Agora",
+      "subtitle": "Você está prestes a iniciar uma jornada transformadora de conexão com Deus através da oração",
+      "audioMessage": "🎧 Sua Primeira Mensagem Especial",
+      "audioInstruction": "Prepare seu coração e ouça atentamente a mensagem abaixo",
+      "audioUrl": "https://drive.google.com/file/d/1dQr-9BzcjAZtoSUgZGP-hSNYKZIP9cUO/preview",
+      "buttonText": "ENTRE NO NOSSO CANAL DO TELEGRAM",
+      "buttonUrl": "https://t.me/luzrua"
+    },
     "error": "Erro ao realizar inscrição",
     "errorMessage": "Por favor, tente novamente mais tarde.",
     "validation": {
