@@ -51,20 +51,21 @@ export default {
           },
         },
         shine: {
-          "0%": { backgroundPosition: "200% center" },
-          "100%": { backgroundPosition: "-200% center" },
+          "0%": { backgroundPosition: "200% center", opacity: "0.7" },
+          "50%": { opacity: "1" },
+          "100%": { backgroundPosition: "-200% center", opacity: "0.7" },
         },
         "shine-inner": {
           "0%": { 
             backgroundPosition: "-200% center",
-            opacity: "0.3"
+            opacity: "0.4"
           },
           "50%": {
-            opacity: "0.6"
+            opacity: "0.8"
           },
           "100%": { 
             backgroundPosition: "200% center",
-            opacity: "0.3"
+            opacity: "0.4"
           },
         },
         pulse: {
@@ -78,8 +79,8 @@ export default {
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
-        shine: "shine 8s ease infinite",
-        "shine-inner": "shine-inner 6s ease infinite",
+        shine: "shine 4s ease infinite",
+        "shine-inner": "shine-inner 3s ease infinite",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
