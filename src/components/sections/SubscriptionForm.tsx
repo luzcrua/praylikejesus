@@ -95,7 +95,7 @@ const SubscriptionForm = () => {
         onOpenChange={() => {}} // Prevents dialog from closing when clicking outside or pressing ESC
       >
         <DialogContent 
-          className="bg-black/95 border-neon-purple text-white max-w-3xl p-0 overflow-hidden"
+          className="bg-black/95 border-neon-purple text-white w-[95%] max-w-3xl p-0 overflow-hidden mx-auto my-4 md:my-8"
           onPointerDownOutside={(e) => e.preventDefault()} // Prevents closing on click outside
           onEscapeKeyDown={(e) => e.preventDefault()} // Prevents closing on ESC key
         >
@@ -105,29 +105,29 @@ const SubscriptionForm = () => {
                          bg-cover bg-center opacity-40"
             />
             
-            <div className="relative z-10 p-8 text-center space-y-6">
-              <div className="space-y-4">
-                <h2 className="text-4xl font-serif font-bold text-primary animate-fade-up">
+            <div className="relative z-10 p-4 sm:p-6 md:p-8 text-center space-y-4 md:space-y-6">
+              <div className="space-y-3 md:space-y-4">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary animate-fade-up">
                   Sua Jornada Espiritual Começa Agora
                 </h2>
                 
-                <p className="text-xl text-white/90 font-light leading-relaxed animate-fade-up" style={{animationDelay: "0.2s"}}>
+                <p className="text-base sm:text-lg md:text-xl text-white/90 font-light leading-relaxed animate-fade-up" style={{animationDelay: "0.2s"}}>
                   Você está prestes a iniciar uma 
                   <span className="text-neon-purple font-semibold"> transformadora jornada </span> 
                   de conexão com Deus através da oração.
                 </p>
                 
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mt-6 animate-fade-up" style={{animationDelay: "0.4s"}}>
-                  <p className="text-lg font-medium text-neon-purple mb-2">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 animate-fade-up" style={{animationDelay: "0.4s"}}>
+                  <p className="text-base sm:text-lg font-medium text-neon-purple mb-2">
                     🎧 Sua Primeira Mensagem Especial
                   </p>
-                  <p className="text-white/80">
+                  <p className="text-sm sm:text-base text-white/80">
                     Prepare seu coração e ouça com atenção a mensagem abaixo
                   </p>
                 </div>
               </div>
 
-              <div className="w-full max-w-md mx-auto mb-6 animate-fade-up" style={{animationDelay: "0.6s"}}>
+              <div className="w-full max-w-md mx-auto mb-4 md:mb-6 animate-fade-up" style={{animationDelay: "0.6s"}}>
                 {showSuccessDialog && (
                   <iframe 
                     src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
@@ -142,7 +142,7 @@ const SubscriptionForm = () => {
               <ShinyButton
                 variant="neon"
                 onClick={() => setShowSuccessDialog(false)}
-                className="w-full max-w-md mx-auto animate-fade-up"
+                className="w-full max-w-md mx-auto text-sm sm:text-base animate-fade-up"
                 style={{animationDelay: "0.8s"}}
               >
                 CONTINUAR MINHA JORNADA
