@@ -30,13 +30,13 @@ const LanguageSelector = () => {
         onChange={(e) => changeLanguage(e.target.value)}
         className="bg-transparent text-white text-sm focus:outline-none cursor-pointer"
       >
-        <option value="">Auto</option>
-        <option value="pt">{t('languageSelector.pt')}</option>
-        <option value="en">{t('languageSelector.en')}</option>
-        <option value="es">{t('languageSelector.es')}</option>
-        <option value="fr">{t('languageSelector.fr')}</option>
-        <option value="it">{t('languageSelector.it')}</option>
-        <option value="de">{t('languageSelector.de')}</option>
+        <option value="">🌐</option>
+        <option value="pt">🇧🇷</option>
+        <option value="en">🇺🇸</option>
+        <option value="es">🇪🇸</option>
+        <option value="fr">🇫🇷</option>
+        <option value="it">🇮🇹</option>
+        <option value="de">🇩🇪</option>
       </select>
     </div>
   );
