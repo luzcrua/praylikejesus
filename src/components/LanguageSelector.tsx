@@ -1,11 +1,25 @@
 import { useTranslation } from 'react-i18next';
 import { Globe } from 'lucide-react';
+import { useEffect } from 'react';
 
 const LanguageSelector = () => {
   const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    // Detecta o idioma do navegador automaticamente na primeira visita
+    const detectedLanguage = navigator.language.split('-')[0];
+    const supportedLanguages = ['pt', 'en', 'es', 'fr', 'it', 'de'];
+    
+    // Se o idioma detectado for suportado e ainda não houver idioma definido
+    if (!localStorage.getItem('i18nextLng') && supportedLanguages.includes(detectedLanguage)) {
+      i18n.changeLanguage(detectedLanguage);
+    }
+  }, [i18n]);
+
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+    if (lng) {
+      i18n.changeLanguage(lng);
+    }
   };
 
   return (
@@ -16,12 +30,13 @@ const LanguageSelector = () => {
         onChange={(e) => changeLanguage(e.target.value)}
         className="bg-transparent text-white text-sm focus:outline-none cursor-pointer"
       >
-        <option value="pt">PT</option>
-        <option value="en">EN</option>
-        <option value="es">ES</option>
-        <option value="fr">FR</option>
-        <option value="it">IT</option>
-        <option value="de">DE</option>
+        <option value="">Auto</option>
+        <option value="pt">{t('languageSelector.pt')}</option>
+        <option value="en">{t('languageSelector.en')}</option>
+        <option value="es">{t('languageSelector.es')}</option>
+        <option value="fr">{t('languageSelector.fr')}</option>
+        <option value="it">{t('languageSelector.it')}</option>
+        <option value="de">{t('languageSelector.de')}</option>
       </select>
     </div>
   );
