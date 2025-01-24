@@ -73,8 +73,15 @@
     "emailPlaceholder": "ihre@email.de",
     "countryPlaceholder": "Ihr Land",
     "submit": "JETZT MEINE GEBETSREISE BEGINNEN",
-    "success": "Registrierung abgeschlossen!",
-    "successMessage": "Sie werden unsere Gebete bald erhalten.",
+    "success": {
+      "title": "Ihre Spirituelle Reise Beginnt Jetzt",
+      "subtitle": "Sie sind dabei, eine transformative Reise der Verbindung mit Gott durch Gebet zu beginnen.",
+      "audioMessage": "🎧 Ihre Erste Spezielle Nachricht",
+      "audioInstruction": "Bereiten Sie Ihr Herz vor und hören Sie sich die Nachricht unten aufmerksam an",
+      "audioUrl": "https://drive.google.com/file/d/1Y0C2B_fSIK8P_6zg4lZ1D0fMqI1uWsoH/preview",
+      "buttonText": "TRETEN SIE UNSEREM TELEGRAM-KANAL BEI",
+      "buttonUrl": "https://t.me/luzcruaalemaooficial"
+    },
     "error": "Fehler bei der Registrierung",
     "errorMessage": "Bitte versuchen Sie es später erneut.",
     "validation": {

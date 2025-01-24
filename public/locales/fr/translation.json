@@ -73,8 +73,15 @@
     "emailPlaceholder": "vous@email.com",
     "countryPlaceholder": "Votre pays",
     "submit": "COMMENCER MON PARCOURS DE PRIÈRE MAINTENANT",
-    "success": "Inscription réussie !",
-    "successMessage": "Vous recevrez nos prières bientôt.",
+    "success": {
+      "title": "Votre Voyage Spirituel Commence Maintenant",
+      "subtitle": "Vous êtes sur le point de commencer un voyage transformateur de connexion avec Dieu à travers la prière.",
+      "audioMessage": "🎧 Votre Premier Message Spécial",
+      "audioInstruction": "Préparez votre cœur et écoutez attentivement le message ci-dessous",
+      "audioUrl": "https://drive.google.com/file/d/1Hdle9G9OxPK-dHlBus6jcYVxRjEYz53J/preview",
+      "buttonText": "REJOIGNEZ NOTRE CHAÎNE TELEGRAM",
+      "buttonUrl": "https://t.me/luzcruafrancesoficial"
+    },
     "error": "Erreur lors de l'inscription",
     "errorMessage": "Veuillez réessayer plus tard.",
     "validation": {
