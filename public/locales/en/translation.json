@@ -80,8 +80,13 @@
     "validation": {
       "nameRequired": "Name must be at least 2 characters long.",
       "emailRequired": "Please enter a valid email.",
-      "countryRequired": "Please enter your country."
-    }
+      "emailInvalid": "Please use an email from a known provider (Gmail, Outlook, Yahoo, iCloud, etc).",
+      "countryRequired": "Please enter your country.",
+      "termsRequired": "You must accept the terms to continue."
+    },
+    "termsText": "I agree to receive promotional emails and authorize the use of my data for marketing purposes, in accordance with the Privacy Policy.",
+    "helpButton": "Having trouble filling out? Contact us",
+    "helpEmail": "help@praylikejesus.com"
   },
   "footer": {
     "rights": "© 2024 Pray Like Jesus. All rights reserved.",

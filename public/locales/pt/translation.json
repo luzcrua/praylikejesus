@@ -81,8 +81,10 @@
       "nameRequired": "O nome deve ter pelo menos 2 caracteres.",
       "emailRequired": "Por favor, insira um email válido.",
       "emailInvalid": "Por favor, use um email de um provedor conhecido (Gmail, Outlook, Yahoo, iCloud, etc).",
-      "countryRequired": "Por favor, insira seu país."
+      "countryRequired": "Por favor, insira seu país.",
+      "termsRequired": "Você precisa aceitar os termos para continuar."
     },
+    "termsText": "Concordo em receber emails promocionais e autorizo o uso dos meus dados para fins de marketing, de acordo com a Política de Privacidade.",
     "helpButton": "Dificuldades para preencher? Entre em contato",
     "helpEmail": "ajuda@orecomojesus.com"
   },

@@ -37,6 +37,9 @@ export const createSubscriptionSchema = (t: (key: string) => string) => z.object
   country: z.string().min(2, {
     message: t('form.validation.countryRequired'),
   }),
+  acceptTerms: z.boolean().refine((value) => value === true, {
+    message: t('form.validation.termsRequired'),
+  }),
 });
 
 export type SubscriptionFormData = z.infer<ReturnType<typeof createSubscriptionSchema>>;

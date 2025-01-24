@@ -8,23 +8,24 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import ShinyButton from "@/components/ShinyButton";
 import { MessageSquare } from "lucide-react";
 import { UseFormReturn } from "react-hook-form";
-import * as z from "zod";
 import { SubscriptionFormData } from "@/schemas/subscriptionSchema";
 
 interface SubscriptionFormFieldsProps {
   form: UseFormReturn<SubscriptionFormData>;
   isSubmitting: boolean;
   onHelpClick: () => void;
+  onSubmit: (data: SubscriptionFormData) => void;
   t: (key: string) => string;
 }
 
-const SubscriptionFormFields = ({ form, isSubmitting, onHelpClick, t }: SubscriptionFormFieldsProps) => {
+const SubscriptionFormFields = ({ form, isSubmitting, onHelpClick, onSubmit, t }: SubscriptionFormFieldsProps) => {
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit((data) => onSubmit(data))} className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           control={form.control}
           name="name"
@@ -64,6 +65,27 @@ const SubscriptionFormFields = ({ form, isSubmitting, onHelpClick, t }: Subscrip
             </FormItem>
           )}
         />
+
+        <FormField
+          control={form.control}
+          name="acceptTerms"
+          render={({ field }) => (
+            <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+              <FormControl>
+                <Checkbox
+                  checked={field.value}
+                  onCheckedChange={field.onChange}
+                />
+              </FormControl>
+              <div className="space-y-1 leading-none">
+                <FormLabel className="text-sm text-gray-300">
+                  {t('form.termsText')}
+                </FormLabel>
+              </div>
+            </FormItem>
+          )}
+        />
+
         <ShinyButton 
           type="submit" 
           variant="neon" 
