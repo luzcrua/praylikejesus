@@ -82,7 +82,9 @@
       "emailRequired": "Por favor, insira um email válido.",
       "emailInvalid": "Por favor, use um email de um provedor conhecido (Gmail, Outlook, Yahoo, iCloud, etc).",
       "countryRequired": "Por favor, insira seu país."
-    }
+    },
+    "helpButton": "Dificuldades para preencher? Entre em contato",
+    "helpEmail": "ajuda@orecomojesus.com"
   },
   "footer": {
     "rights": "© 2024 Ore Como Jesus. Todos os direitos reservados.",

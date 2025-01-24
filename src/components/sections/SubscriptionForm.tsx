@@ -3,6 +3,7 @@ import { useToast } from "@/components/ui/use-toast";
 import ShinyButton from "@/components/ShinyButton";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { useTranslation } from "react-i18next";
+import { MessageSquare } from "lucide-react";
 import {
   Form,
   FormControl,
@@ -127,6 +128,15 @@ const SubscriptionForm = () => {
     }
   }
 
+  const handleHelpClick = () => {
+    window.location.href = `mailto:${t('form.helpEmail')}?subject=Ajuda com formulário`;
+    trackEvent({
+      action: 'help_button_click',
+      category: 'Form',
+      label: 'Help requested'
+    });
+  };
+
   return (
     <section id="form" className="relative py-20">
       <div className="absolute inset-0 bg-[url('/lovable-uploads/4bf0c246-5410-41d7-a50e-65e7b1cfe25d.png')] bg-cover bg-center opacity-20" />
@@ -187,6 +197,14 @@ const SubscriptionForm = () => {
               </ShinyButton>
             </form>
           </Form>
+          
+          <button
+            onClick={handleHelpClick}
+            className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-white transition-colors mx-auto group"
+          >
+            <MessageSquare className="w-4 h-4 group-hover:text-neon-purple transition-colors" />
+            <span>{t('form.helpButton')}</span>
+          </button>
         </div>
       </div>
     </section>
