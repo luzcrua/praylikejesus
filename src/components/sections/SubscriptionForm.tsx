@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
@@ -39,10 +39,18 @@ const SubscriptionForm = () => {
       await submitToMailchimp(mailchimpData);
       trackFormSubmission(values);
 
+      // Mensagem de agradecimento melhorada
       toast({
         title: t('form.success'),
-        description: t('form.successMessage'),
+        description: (
+          <div className="flex flex-col gap-2">
+            <p>{values.name}, {t('form.successMessage')}</p>
+            <p className="text-sm">✨ {t('form.successDetails')}</p>
+            <p className="text-xs">📧 {t('form.checkEmail')}</p>
+          </div>
+        ),
         className: "bg-black border-neon-purple text-neon-purple font-semibold animate-shine shadow-[0_0_15px_rgba(139,92,246,0.5)]",
+        duration: 6000, // Aumentando a duração para 6 segundos
       });
 
       form.reset();
