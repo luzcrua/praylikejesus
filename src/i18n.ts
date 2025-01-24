@@ -13,7 +13,7 @@ i18n
       'pt-PT': ['pt'],
       'default': ['pt']
     },
-    supportedLngs: ['pt', 'en', 'es', 'fr', 'it'],
+    supportedLngs: ['pt', 'en', 'es', 'fr', 'it', 'de'],
     nonExplicitSupportedLngs: true,
     debug: true,
     detection: {

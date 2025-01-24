@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "title": "Entdecken Sie, wie Sie wie Jesus beten und Ihr spirituelles Leben transformieren können",
+    "subtitle": "Erhalten Sie exklusive 100% KOSTENLOSE Gebete für eine tiefe Verbindung mit Gott",
+    "cta": "ICH MÖCHTE MEINE GEBETSREISE BEGINNEN"
+  },
+  "benefits": {
+    "title": "Warum wie Jesus beten?",
+    "connection": {
+      "title": "Tiefe Verbindung",
+      "description": "Entwickeln Sie eine einzigartige Intimität mit Gott durch Gebet"
+    },
+    "transformation": {
+      "title": "Innere Transformation",
+      "description": "Erleben Sie echte Veränderungen in Ihrem spirituellen Leben"
+    },
+    "miracles": {
+      "title": "Wunderbare Erfahrungen",
+      "description": "Erleben Sie die übernatürliche Kraft des Gebets in Ihrem Leben"
+    }
+  },
+  "devotional": {
+    "title": "Tägliche Andacht",
+    "quote": "\"Vater unser im Himmel, geheiligt werde dein Name...\"",
+    "cta": "KOSTENLOSE TÄGLICHE ANDACHTEN ERHALTEN"
+  },
+  "prayerGuide": {
+    "title": "Vollständiger Gebetsleitfaden",
+    "ebook": {
+      "title": "Kostenloses E-Book",
+      "description": "Laden Sie unseren vollständigen Leitfaden mit praktischen Gebetstechniken und Beispielen herunter, um Ihr spirituelles Leben zu transformieren.",
+      "cta": "KOSTENLOSEN GEBETSLEITFADEN HERUNTERLADEN →"
+    },
+    "tips": {
+      "title": "Exklusive Tipps",
+      "description": "Erhalten Sie praktische Tipps und kraftvolle Einblicke, um Ihre spirituelle Verbindung durch Gebet zu stärken.",
+      "cta": "KRAFTVOLLE GEBETSTIPPS ERHALTEN →"
+    }
+  },
+  "transformation": {
+    "title": "Transformieren Sie Ihr Leben durch Gebet",
+    "benefits": [
+      "Größerer innerer Frieden und mentale Klarheit",
+      "Stärkung des Glaubens und Vertrauens in Gott",
+      "Entwicklung einer effektiven Gebetsroutine",
+      "Überwindung von Hindernissen durch Gebet",
+      "Beschleunigtes spirituelles Wachstum",
+      "Tiefere Verbindung mit Gott"
+    ],
+    "cta": "ICH MÖCHTE MEIN LEBEN DURCH GEBET TRANSFORMIEREN →"
+  },
+  "testimonials": {
+    "title": "Transformierte Leben",
+    "testimonial1": {
+      "name": "Maria Schmidt",
+      "text": "Nachdem ich gelernt habe, wie Jesus zu beten, hat mein spirituelles Leben eine neue Bedeutung gewonnen."
+    },
+    "testimonial2": {
+      "name": "Johannes Weber",
+      "text": "Die exklusiven Gebete haben mir geholfen, eine tiefere Verbindung zu Gott zu entwickeln."
+    },
+    "testimonial3": {
+      "name": "Anna Müller",
+      "text": "Ich hätte nie gedacht, dass ich ein so kraftvolles Gebetsleben haben könnte. Ich bin so dankbar!"
+    }
+  },
+  "form": {
+    "title": "Erhalten Sie Ihre exklusiven Gebete",
+    "name": "Name",
+    "email": "E-Mail",
+    "country": "Land",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "ihre@email.de",
+    "countryPlaceholder": "Ihr Land",
+    "submit": "JETZT MEINE GEBETSREISE BEGINNEN",
+    "success": "Registrierung abgeschlossen!",
+    "successMessage": "Sie werden unsere Gebete bald erhalten.",
+    "error": "Fehler bei der Registrierung",
+    "errorMessage": "Bitte versuchen Sie es später erneut.",
+    "validation": {
+      "nameRequired": "Der Name muss mindestens 2 Zeichen lang sein.",
+      "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "countryRequired": "Bitte geben Sie Ihr Land ein."
+    }
+  },
+  "footer": {
+    "rights": "© 2024 Beten wie Jesus. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen"
+  },
+  "languageSelector": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "de": "Deutsch"
+  }
+}
