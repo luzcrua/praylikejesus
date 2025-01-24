@@ -16,7 +16,6 @@ export const submitToMailchimp = async (data: SubscriptionData): Promise<Respons
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      54cfdb8af4c0a690b6701b62f05b75420137f92fe2-us9,
       "Authorization": `Bearer ${import.meta.env.VITE_MAILCHIMP_API_KEY}`,
     },
     body: JSON.stringify({
