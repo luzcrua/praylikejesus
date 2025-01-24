@@ -68,8 +68,10 @@
     "title": "Receive Your Exclusive Prayers",
     "name": "Name",
     "email": "Email",
+    "country": "Country",
     "namePlaceholder": "Your name",
     "emailPlaceholder": "your@email.com",
+    "countryPlaceholder": "Your country",
     "submit": "START MY PRAYER JOURNEY NOW",
     "success": "Registration completed!",
     "successMessage": "You will receive our prayers soon.",
@@ -77,7 +79,8 @@
     "errorMessage": "Please try again later.",
     "validation": {
       "nameRequired": "Name must be at least 2 characters long.",
-      "emailRequired": "Please enter a valid email."
+      "emailRequired": "Please enter a valid email.",
+      "countryRequired": "Please enter your country."
     }
   },
   "footer": {

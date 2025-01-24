@@ -68,8 +68,10 @@
     "title": "Recibe Tus Oraciones Exclusivas",
     "name": "Nombre",
     "email": "Correo electrónico",
+    "country": "País",
     "namePlaceholder": "Tu nombre",
     "emailPlaceholder": "tu@email.com",
+    "countryPlaceholder": "Tu país",
     "submit": "COMENZAR MI JORNADA DE ORACIÓN AHORA",
     "success": "¡Registro completado!",
     "successMessage": "Recibirás nuestras oraciones pronto.",
@@ -77,7 +79,8 @@
     "errorMessage": "Por favor, inténtalo de nuevo más tarde.",
     "validation": {
       "nameRequired": "El nombre debe tener al menos 2 caracteres.",
-      "emailRequired": "Por favor, ingresa un correo electrónico válido."
+      "emailRequired": "Por favor, ingresa un correo electrónico válido.",
+      "countryRequired": "Por favor, ingresa tu país."
     }
   },
   "footer": {

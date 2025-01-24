@@ -31,6 +31,9 @@ const SubscriptionForm = () => {
     email: z.string().email({
       message: t('form.validation.emailRequired'),
     }),
+    country: z.string().min(2, {
+      message: t('form.validation.countryRequired'),
+    }),
   });
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -38,6 +41,7 @@ const SubscriptionForm = () => {
     defaultValues: {
       name: "",
       email: "",
+      country: "",
     },
   });
 
@@ -127,6 +131,19 @@ const SubscriptionForm = () => {
                     <FormLabel className="text-white">{t('form.email')}</FormLabel>
                     <FormControl>
                       <Input placeholder={t('form.emailPlaceholder')} {...field} />
+                    </FormControl>
+                    <FormMessage className="text-red-400" />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="country"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-white">{t('form.country')}</FormLabel>
+                    <FormControl>
+                      <Input placeholder={t('form.countryPlaceholder')} {...field} />
                     </FormControl>
                     <FormMessage className="text-red-400" />
                   </FormItem>

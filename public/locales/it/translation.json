@@ -74,9 +74,11 @@
   "form": {
     "title": "Ricevi la Tua Guida Devozionale",
     "name": "Nome",
-    "namePlaceholder": "Inserisci il tuo nome",
     "email": "Email",
+    "country": "Paese",
+    "namePlaceholder": "Inserisci il tuo nome",
     "emailPlaceholder": "Inserisci la tua email",
+    "countryPlaceholder": "Inserisci il tuo paese",
     "submit": "RICEVI LA GUIDA",
     "success": "Successo!",
     "successMessage": "La tua guida devozionale è in arrivo nella tua casella email.",
@@ -84,7 +86,8 @@
     "errorMessage": "Si è verificato un errore. Per favore riprova più tardi.",
     "validation": {
       "nameRequired": "Il nome è obbligatorio",
-      "emailRequired": "Inserisci un indirizzo email valido"
+      "emailRequired": "Inserisci un indirizzo email valido",
+      "countryRequired": "Inserisci il tuo paese"
     }
   },
   "footer": {

@@ -68,8 +68,10 @@
     "title": "Recevez Vos Prières Exclusives",
     "name": "Nom",
     "email": "E-mail",
+    "country": "Pays",
     "namePlaceholder": "Votre nom",
     "emailPlaceholder": "vous@email.com",
+    "countryPlaceholder": "Votre pays",
     "submit": "COMMENCER MON PARCOURS DE PRIÈRE MAINTENANT",
     "success": "Inscription réussie !",
     "successMessage": "Vous recevrez nos prières bientôt.",
@@ -77,7 +79,8 @@
     "errorMessage": "Veuillez réessayer plus tard.",
     "validation": {
       "nameRequired": "Le nom doit contenir au moins 2 caractères.",
-      "emailRequired": "Veuillez entrer un e-mail valide."
+      "emailRequired": "Veuillez entrer un e-mail valide.",
+      "countryRequired": "Veuillez entrer votre pays."
     }
   },
   "footer": {
@@ -89,6 +92,7 @@
     "pt": "Português",
     "en": "English",
     "es": "Español",
-    "fr": "Français"
+    "fr": "Français",
+    "it": "Italiano"
   }
 }
