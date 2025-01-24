@@ -78,7 +78,7 @@ const SubscriptionFormFields = ({ form, isSubmitting, onHelpClick, onSubmit, t }
                 />
               </FormControl>
               <div className="space-y-1 leading-none">
-                <FormLabel className="text-sm text-gray-300">
+                <FormLabel className="text-sm text-gray-300 text-xs">
                   {t('form.termsText')}
                 </FormLabel>
               </div>
