@@ -1,107 +1,116 @@
 {
-  "languageSelector": {
-    "pt": "Portoghese",
-    "en": "Inglese",
-    "es": "Spagnolo",
-    "fr": "Francese",
-    "it": "Italiano"
-  },
-  "siteTitle": "Prega Come Gesù",
   "hero": {
-    "title": "Scopri Come <span class='text-neon-purple font-bold animate-pulse'>Pregare Come Gesù</span> e Trasforma la Tua Vita Spirituale",
-    "subtitle": "Ricevi preghiere esclusive <span class='text-neon-purple font-bold animate-pulse animate-shine'>100% GRATUITE</span> per connetterti profondamente con Dio",
-    "cta": "Inizia il Tuo Viaggio Spirituale"
+    "title": "Découvrez Comment <span class='text-neon-purple font-bold animate-pulse'>Prier Comme Jésus</span> et Transformez Votre Vie Spirituelle",
+    "subtitle": "Recevez des prières exclusives <span class='text-neon-purple font-bold animate-pulse animate-shine'>100% GRATUITES</span> pour vous connecter profondément avec Dieu",
+    "cta": "JE VEUX COMMENCER MON PARCOURS DE PRIÈRE"
   },
   "benefits": {
-    "title": "Benefici della Preghiera Quotidiana",
+    "title": "Pourquoi Prier comme Jésus ?",
     "connection": {
-      "title": "Connessione Più Profonda",
-      "description": "Stabilisci una connessione più profonda e significativa con Dio attraverso la preghiera quotidiana."
+      "title": "Connexion Profonde",
+      "description": "Développez une intimité unique avec Dieu à travers la prière"
     },
     "transformation": {
-      "title": "Trasformazione Personale",
-      "description": "Sperimenta una trasformazione positiva nella tua vita mentre cresci spiritualmente."
+      "title": "Transformation Intérieure",
+      "description": "Expérimentez des changements réels dans votre vie spirituelle"
     },
     "miracles": {
-      "title": "Miracoli Quotidiani",
-      "description": "Testimonia i miracoli quotidiani che accadono attraverso il potere della preghiera."
+      "title": "Expériences Miraculeuses",
+      "description": "Expérimentez le pouvoir surnaturel de la prière dans votre vie"
     }
   },
   "devotional": {
-    "title": "Guida Devozionale Quotidiana",
-    "quote": "La preghiera è la chiave del mattino e il chiavistello della sera.",
-    "cta": "Ricevi la Tua Guida"
+    "title": "Dévotion Quotidienne",
+    "quote": "\"Notre Père qui es aux cieux, que ton nom soit sanctifié...\"",
+    "cta": "RECEVOIR DES DÉVOTIONS QUOTIDIENNES GRATUITES"
   },
   "prayerGuide": {
-    "title": "La Tua Guida alla Preghiera",
+    "title": "Guide Complet de Prière",
     "ebook": {
-      "title": "eBook Gratuito",
-      "description": "Scarica il nostro eBook gratuito con preghiere guidate e riflessioni quotidiane.",
-      "cta": "Scarica l'eBook"
+      "title": "E-book Gratuit",
+      "description": "Téléchargez notre guide complet avec des techniques et des exemples pratiques de prière pour transformer votre vie spirituelle.",
+      "cta": "TÉLÉCHARGER LE GUIDE DE PRIÈRE GRATUIT →"
     },
     "tips": {
-      "title": "Consigli di Preghiera",
-      "description": "Ricevi consigli quotidiani per migliorare la tua vita di preghiera.",
-      "cta": "Ricevi i Consigli"
+      "title": "Conseils Exclusifs",
+      "description": "Recevez des conseils pratiques et des idées puissantes pour renforcer votre connexion spirituelle à travers la prière.",
+      "cta": "RECEVOIR DES CONSEILS PUISSANTS DE PRIÈRE →"
     }
   },
   "transformation": {
-    "title": "Trasformazione Attraverso la Preghiera",
+    "title": "Transformez Votre Vie Par la Prière",
     "benefits": [
-      "Maggiore pace interiore e serenità",
-      "Relazioni più forti con famiglia e amici",
-      "Chiarezza nella presa di decisioni",
-      "Aumento della fede e della fiducia",
-      "Miglioramento del benessere emotivo",
-      "Senso più profondo di scopo nella vita"
+      "Plus de paix intérieure et de clarté mentale",
+      "Renforcement de la foi et de la confiance en Dieu",
+      "Développement d'une routine de prière efficace",
+      "Surmonter les obstacles par la prière",
+      "Croissance spirituelle accélérée",
+      "Connexion plus profonde avec Dieu"
     ],
-    "cta": "Inizia la Tua Trasformazione"
+    "cta": "JE VEUX TRANSFORMER MA VIE PAR LA PRIÈRE →"
   },
   "testimonials": {
-    "title": "Testimonianze",
+    "title": "Vies Transformées",
     "testimonial1": {
-      "name": "Maria R.",
-      "text": "Questa guida devozionale ha completamente trasformato la mia vita di preghiera. Mi sento più vicina a Dio che mai."
+      "name": "Marie Dubois",
+      "text": "Après avoir appris à prier comme Jésus, ma vie spirituelle a pris un nouveau sens."
     },
     "testimonial2": {
-      "name": "Giovanni B.",
-      "text": "Le preghiere guidate mi hanno aiutato a sviluppare una routine spirituale quotidiana che ha cambiato la mia vita."
+      "name": "Jean Martin",
+      "text": "Les prières exclusives m'ont aidé à développer une connexion plus profonde avec Dieu."
     },
     "testimonial3": {
-      "name": "Lucia M.",
-      "text": "I consigli quotidiani sono esattamente ciò di cui avevo bisogno per approfondire la mia fede."
+      "name": "Anne Laurent",
+      "text": "Je n'aurais jamais imaginé pouvoir avoir une vie de prière aussi puissante. Je suis très reconnaissante !"
     }
   },
   "form": {
-    "title": "Ricevi la Tua Guida Devozionale",
-    "name": "Nome",
-    "email": "Email",
-    "country": "Paese",
-    "namePlaceholder": "Inserisci il tuo nome",
-    "emailPlaceholder": "Inserisci la tua email",
-    "countryPlaceholder": "Inserisci il tuo paese",
-    "submit": "RICEVI LA GUIDA",
-    "success": "Successo!",
-    "successMessage": "La tua guida devozionale è in arrivo nella tua casella email.",
-    "error": "Errore",
-    "errorMessage": "Si è verificato un errore. Per favore riprova più tardi.",
+    "title": "Recevez Vos Prières Exclusives",
+    "name": "Nom",
+    "email": "E-mail",
+    "country": "Pays",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "vous@email.com",
+    "countryPlaceholder": "Votre pays",
+    "submit": "COMMENCER MON PARCOURS DE PRIÈRE MAINTENANT",
+    "success": "Inscription réussie !",
+    "successMessage": "Vous recevrez nos prières bientôt.",
+    "error": "Erreur lors de l'inscription",
+    "errorMessage": "Veuillez réessayer plus tard.",
     "validation": {
-      "nameRequired": "Il nome è obbligatorio",
-      "emailRequired": "Inserisci un indirizzo email valido",
-      "countryRequired": "Inserisci il tuo paese"
+      "nameRequired": "Le nom doit contenir au moins 2 caractères.",
+      "emailRequired": "Veuillez entrer un e-mail valide.",
+      "countryRequired": "Veuillez entrer votre pays."
     },
-    "termsText": "Accetto di ricevere email promozionali e autorizzo l'uso dei miei dati per scopi di marketing, in conformità con la Privacy Policy.",
-    "helpButton": "Problemi nella compilazione? Contattaci",
-    "helpEmail": "aiuto@pregacomegesu.com"
+    "termsText": "J'accepte de recevoir des e-mails promotionnels et j'autorise l'utilisation de mes données à des fins marketing, conformément à la Politique de Confidentialité.",
+    "helpButton": "Des difficultés pour remplir ? Contactez-nous",
+    "helpEmail": "aide@priezcommejesus.com",
+    "success": {
+      "title": "Il Tuo Viaggio Spirituale Inizia Ora",
+      "subtitle": "Stai per iniziare un viaggio trasformativo di connessione con Dio attraverso la preghiera.",
+      "audioMessage": "🎧 Il Tuo Primo Messaggio Speciale",
+      "audioInstruction": "Prepara il tuo cuore e ascolta attentamente il messaggio qui sotto",
+      "audioUrl": "https://drive.google.com/file/d/1ZzIG5XdTJTeAtqRUFNv94qKVzFv_bAyV/preview",
+      "buttonText": "UNISCITI AL NOSTRO CANALE TELEGRAM",
+      "buttonUrl": "https://t.me/lucecrudaoficial"
+    }
   },
   "footer": {
-    "rights": "© 2024 Tutti i diritti riservati",
-    "privacy": "Privacy",
-    "terms": "Termini"
+    "rights": "© 2024 Priez Comme Jésus. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "languageSelector": {
+    "pt": "Portugais",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano"
   },
   "cookies": {
-    "title": "Utilizziamo i cookies",
-    "description": "Utilizziamo i cookies per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti la nostra Privacy Policy.",
-    "accept": "Accetta"
-  }
+    "title": "Nous utilisons des cookies",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer, vous acceptez notre Politique de Confidentialité.",
+    "accept": "Accepter"
+  },
+  "siteTitle": "Priez Comme Jésus"
 }

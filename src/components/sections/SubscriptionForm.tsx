@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { useTranslation } from "react-i18next";
@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { createSubscriptionSchema, type SubscriptionFormData } from "@/schemas/subscriptionSchema";
 import { submitToMailchimp, type SubscriptionData } from "@/services/mailchimpService";
 import SubscriptionFormFields from "@/components/form/SubscriptionFormFields";
-import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ShinyButton from "@/components/ShinyButton";
 
 const SubscriptionForm = () => {
@@ -32,16 +32,6 @@ const SubscriptionForm = () => {
     console.log("Enviando dados para o Mailchimp:", values);
 
     try {
-      // Comentando temporariamente o envio real para o Mailchimp
-      // const mailchimpData: SubscriptionData = {
-      //   name: values.name,
-      //   email: values.email,
-      //   country: values.country,
-      //   acceptTerms: values.acceptTerms
-      // };
-      // await submitToMailchimp(mailchimpData);
-      
-      // Simulando sucesso
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       trackFormSubmission(values);
@@ -69,6 +59,10 @@ const SubscriptionForm = () => {
     });
   };
 
+  const handleContinue = () => {
+    window.location.href = t('form.success.buttonUrl');
+  };
+
   return (
     <>
       <section id="form" className="relative py-20">
@@ -92,12 +86,12 @@ const SubscriptionForm = () => {
 
       <Dialog 
         open={showSuccessDialog} 
-        onOpenChange={() => {}} // Prevents dialog from closing when clicking outside or pressing ESC
+        onOpenChange={() => {}}
       >
         <DialogContent 
           className="bg-black/95 border-neon-purple text-white w-[95%] max-w-3xl p-0 overflow-hidden mx-auto my-4 md:my-8"
-          onPointerDownOutside={(e) => e.preventDefault()} // Prevents closing on click outside
-          onEscapeKeyDown={(e) => e.preventDefault()} // Prevents closing on ESC key
+          onPointerDownOutside={(e) => e.preventDefault()}
+          onEscapeKeyDown={(e) => e.preventDefault()}
         >
           <div className="relative">
             <div 
@@ -108,21 +102,19 @@ const SubscriptionForm = () => {
             <div className="relative z-10 p-4 sm:p-6 md:p-8 text-center space-y-4 md:space-y-6">
               <div className="space-y-3 md:space-y-4">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary animate-fade-up">
-                  Sua Jornada Espiritual Começa Agora
+                  {t('form.success.title')}
                 </h2>
                 
                 <p className="text-base sm:text-lg md:text-xl text-white/90 font-light leading-relaxed animate-fade-up" style={{animationDelay: "0.2s"}}>
-                  Você está prestes a iniciar uma 
-                  <span className="text-neon-purple font-semibold"> transformadora jornada </span> 
-                  de conexão com Deus através da oração.
+                  {t('form.success.subtitle')}
                 </p>
                 
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 animate-fade-up" style={{animationDelay: "0.4s"}}>
                   <p className="text-base sm:text-lg font-medium text-neon-purple mb-2">
-                    🎧 Sua Primeira Mensagem Especial
+                    {t('form.success.audioMessage')}
                   </p>
                   <p className="text-sm sm:text-base text-white/80">
-                    Prepare seu coração e ouça com atenção a mensagem abaixo
+                    {t('form.success.audioInstruction')}
                   </p>
                 </div>
               </div>
@@ -130,7 +122,7 @@ const SubscriptionForm = () => {
               <div className="w-full max-w-md mx-auto mb-4 md:mb-6 animate-fade-up" style={{animationDelay: "0.6s"}}>
                 {showSuccessDialog && (
                   <iframe 
-                    src="https://drive.google.com/file/d/1KvrcY1hMEDqwJX36_5xxSr14NWtwszK9/preview" 
+                    src={t('form.success.audioUrl')}
                     width="100%" 
                     height="100" 
                     allow="autoplay"
@@ -141,11 +133,11 @@ const SubscriptionForm = () => {
 
               <ShinyButton
                 variant="neon"
-                onClick={() => setShowSuccessDialog(false)}
+                onClick={handleContinue}
                 className="w-full max-w-md mx-auto text-sm sm:text-base animate-fade-up"
                 style={{animationDelay: "0.8s"}}
               >
-                CONTINUAR MINHA JORNADA
+                {t('form.success.buttonText')}
               </ShinyButton>
             </div>
           </div>

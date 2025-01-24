@@ -73,8 +73,15 @@
     "emailPlaceholder": "tu@email.com",
     "countryPlaceholder": "Tu país",
     "submit": "COMENZAR MI JORNADA DE ORACIÓN AHORA",
-    "success": "¡Registro completado!",
-    "successMessage": "Recibirás nuestras oraciones pronto.",
+    "success": {
+      "title": "Tu Viaje Espiritual Comienza Ahora",
+      "subtitle": "Estás a punto de comenzar un viaje transformador de conexión con Dios a través de la oración.",
+      "audioMessage": "🎧 Tu Primer Mensaje Especial",
+      "audioInstruction": "Prepara tu corazón y escucha atentamente el mensaje a continuación",
+      "audioUrl": "https://drive.google.com/file/d/1c-oU-f9z554vtAIGYeTQjJ6hy1EBfX_x/preview",
+      "buttonText": "ÚNETE A NUESTRO CANAL DE TELEGRAM",
+      "buttonUrl": "https://t.me/luzcrudaoficial"
+    },
     "error": "Error durante el registro",
     "errorMessage": "Por favor, inténtalo de nuevo más tarde.",
     "validation": {

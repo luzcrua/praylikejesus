@@ -73,8 +73,15 @@
     "emailPlaceholder": "your@email.com",
     "countryPlaceholder": "Your country",
     "submit": "START MY PRAYER JOURNEY NOW",
-    "success": "Registration completed!",
-    "successMessage": "You will receive our prayers soon.",
+    "success": {
+      "title": "Your Spiritual Journey Begins Now",
+      "subtitle": "You are about to begin a transformative journey of connection with God through prayer.",
+      "audioMessage": "🎧 Your First Special Message",
+      "audioInstruction": "Prepare your heart and listen carefully to the message below",
+      "audioUrl": "https://drive.google.com/file/d/1dQr-9BzcjAZtoSUgZGP-hSNYKZIP9cUO/preview",
+      "buttonText": "JOIN OUR TELEGRAM CHANNEL",
+      "buttonUrl": "https://t.me/rawlightofficial"
+    },
     "error": "Error during registration",
     "errorMessage": "Please try again later.",
     "validation": {
