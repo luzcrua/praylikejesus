@@ -6,8 +6,8 @@ interface SubscriptionData {
 }
 
 export const submitToMailchimp = async (data: SubscriptionData): Promise<Response> => {
-  const MAILCHIMP_SERVER = "us9"; // Seu servidor é us9 baseado na API key
-  const MAILCHIMP_LIST_ID = "54cfdb8af4"; // Seu Audience ID
+  const MAILCHIMP_SERVER = "us9";
+  const MAILCHIMP_LIST_ID = "54cfdb8af4";
   const MAILCHIMP_URL = `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members`;
   const API_KEY = import.meta.env.VITE_MAILCHIMP_API_KEY;
 
@@ -17,8 +17,7 @@ export const submitToMailchimp = async (data: SubscriptionData): Promise<Respons
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      // Mailchimp usa Basic Auth com "anystring:apikey"
-      "Authorization": `Basic ${btoa(`anystring:${API_KEY}`)}`,
+      "Authorization": `Basic ${btoa(`apikey:${API_KEY}`)}`,
     },
     body: JSON.stringify({
       email_address: data.email,
