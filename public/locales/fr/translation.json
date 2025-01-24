@@ -88,7 +88,9 @@
     "validation": {
       "nameRequired": "Le nom doit contenir au moins 2 caractères.",
       "emailRequired": "Veuillez entrer un e-mail valide.",
-      "countryRequired": "Veuillez entrer votre pays."
+      "countryRequired": "Veuillez entrer votre pays.",
+      "emailInvalid": "Veuillez entrer un e-mail valide.",
+      "termsRequired": "Vous devez accepter les termes et conditions."
     },
     "termsText": "J'accepte de recevoir des e-mails promotionnels et j'autorise l'utilisation de mes données à des fins marketing, conformément à la Politique de Confidentialité.",
     "helpButton": "Des difficultés pour remplir ? Contactez-nous",
