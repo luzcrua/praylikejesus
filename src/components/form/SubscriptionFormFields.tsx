@@ -12,13 +12,10 @@ import ShinyButton from "@/components/ShinyButton";
 import { MessageSquare } from "lucide-react";
 import { UseFormReturn } from "react-hook-form";
 import * as z from "zod";
+import { SubscriptionFormData } from "@/schemas/subscriptionSchema";
 
 interface SubscriptionFormFieldsProps {
-  form: UseFormReturn<{
-    name: string;
-    email: string;
-    country: string;
-  }>;
+  form: UseFormReturn<SubscriptionFormData>;
   isSubmitting: boolean;
   onHelpClick: () => void;
   t: (key: string) => string;
@@ -27,7 +24,7 @@ interface SubscriptionFormFieldsProps {
 const SubscriptionFormFields = ({ form, isSubmitting, onHelpClick, t }: SubscriptionFormFieldsProps) => {
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit} className="space-y-6">
+      <form onSubmit={form.handleSubmit((data) => form.handleSubmit(data))} className="space-y-6">
         <FormField
           control={form.control}
           name="name"

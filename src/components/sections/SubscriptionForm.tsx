@@ -23,7 +23,7 @@ const SubscriptionForm = () => {
     },
   });
 
-  async function onSubmit(values: SubscriptionFormData) {
+  const onSubmit = async (values: SubscriptionFormData) => {
     setIsSubmitting(true);
     console.log("Enviando dados para o Mailchimp:", values);
 
@@ -56,7 +56,7 @@ const SubscriptionForm = () => {
     } finally {
       setIsSubmitting(false);
     }
-  }
+  };
 
   const handleHelpClick = () => {
     window.location.href = `mailto:${t('form.helpEmail')}?subject=Ajuda com formulário`;
