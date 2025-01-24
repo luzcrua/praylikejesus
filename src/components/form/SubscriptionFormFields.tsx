@@ -24,7 +24,7 @@ interface SubscriptionFormFieldsProps {
 const SubscriptionFormFields = ({ form, isSubmitting, onHelpClick, t }: SubscriptionFormFieldsProps) => {
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit((data) => form.handleSubmit(data))} className="space-y-6">
+      <form onSubmit={form.handleSubmit((data) => onSubmit(data))} className="space-y-6">
         <FormField
           control={form.control}
           name="name"
