@@ -40,7 +40,7 @@ const SubscriptionForm = () => {
       // Start timer for Telegram button
       const timer = setTimeout(() => {
         setShowTelegramButton(true);
-      }, 10000); // 10 seconds
+      }, 20000); // 10 seconds
 
       return () => clearTimeout(timer);
     }
@@ -157,7 +157,7 @@ const SubscriptionForm = () => {
                     src={t('form.success.audioUrl')}
                     width="100%" 
                     height="100" 
-                    allow="autoplay"
+                    allow="autoplay=1"
                     className="rounded-lg shadow-lg"
                     onLoad={handleIframeLoad}
                   />
