@@ -157,7 +157,7 @@ const SubscriptionForm = () => {
                     src={t('form.success.audioUrl')}
                     width="100%" 
                     height="100" 
-                    allow="autoplay=1"
+                    allow="?autoplay=1"
                     className="rounded-lg shadow-lg"
                     onLoad={handleIframeLoad}
                   />
