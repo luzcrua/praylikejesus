@@ -29,7 +29,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <audio 
+      <iframe 
         ref={iframeRef}
         src="./lovable-uploads/music-background.MP3"
         style={{ display: 'none' }}
