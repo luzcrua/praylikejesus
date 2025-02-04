@@ -29,12 +29,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <iframe 
+      <audio 
         ref={iframeRef}
         src="./lovable-uploads/music-background.MP3"
         style={{ display: 'none' }}
+        loop
         allow="autoplay"
-      />
+        />
       <DynamicTitle />
       <LanguageSelector />
       <main>
