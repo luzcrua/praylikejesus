@@ -1,10 +1,10 @@
 {
   "hero": {
-    "title": "Discover How to <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> Like Jesus and Transform Your Spiritual Life",
+    "title": "Discover How to <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> <span class='text-neon-purple font-bold animate-pulse'>Like Jesus</span> and Transform Your Spiritual Life",
     "titleWords": ["PRAY", "THINK", "DO", "HELP"]
   },
   "benefits": {
-    "title": "Why Pray like Jesus?",
+    "title": "Why Pray Like Jesus?",
     "connection": {
       "title": "Deep Connection",
       "description": "Develop a unique intimacy with God through prayer"
@@ -26,14 +26,14 @@
   "prayerGuide": {
     "title": "Complete Prayer Guide",
     "ebook": {
-      "title": "Free E-book",
+      "title": "Free E-Book",
       "description": "Download our complete guide with practical prayer techniques and examples to transform your spiritual life.",
       "cta": "DOWNLOAD FREE PRAYER GUIDE →"
     },
     "tips": {
       "title": "Exclusive Tips",
       "description": "Receive practical tips and powerful insights to strengthen your spiritual connection through prayer.",
-      "cta": "RECEIVE POWERFUL PRAYER TIPS →"
+      "cta": "GET POWERFUL PRAYER TIPS →"
     }
   },
   "transformation": {
@@ -51,16 +51,16 @@
   "testimonials": {
     "title": "Transformed Lives",
     "testimonial1": {
-      "name": "Mary Smith",
-      "text": "After learning to pray like Jesus, my spiritual life gained new meaning."
+      "name": "Maria Smith",
+      "text": "After learning how to pray like Jesus, my spiritual life gained new meaning."
     },
     "testimonial2": {
-      "name": "John Santos",
+      "name": "John Doe",
       "text": "The exclusive prayers helped me develop a deeper connection with God."
     },
     "testimonial3": {
-      "name": "Anna Oliver",
-      "text": "I never imagined I could have such a powerful prayer life. I'm so grateful!"
+      "name": "Anna Johnson",
+      "text": "I never thought I could have such a powerful prayer life. I am so grateful!"
     }
   },
   "form": {
@@ -68,30 +68,28 @@
     "name": "Name",
     "email": "Email",
     "country": "Country",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "your@email.com",
-    "countryPlaceholder": "Your country",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "you@email.com",
+    "countryPlaceholder": "Your Country",
     "submit": "START MY PRAYER JOURNEY NOW",
     "success": {
       "title": "Your Spiritual Journey Begins Now",
-      "subtitle": "You are about to begin a transformative journey of connection with God through prayer.",
+      "subtitle": "You are about to embark on a transformative journey of connection with God through prayer.",
       "audioMessage": "🎧 Your First Special Message",
       "audioInstruction": "Prepare your heart and listen carefully to the message below",
-      "audioUrl": "https://drive.google.com/file/d/1dQr-9BzcjAZtoSUgZGP-hSNYKZIP9cUO/preview",
+      "audioUrl": "https://drive.google.com/file/d/1Y0C2B_fSIK8P_6zg4lZ1D0fMqI1uWsoH/preview",
       "buttonText": "JOIN OUR TELEGRAM CHANNEL",
-      "buttonUrl": "https://t.me/rawlighten",
+      "buttonUrl": "https://t.me/roheslichtde",
       "loading": "Loading audio..."
     },
     "error": "Error during registration",
     "errorMessage": "Please try again later.",
     "validation": {
       "nameRequired": "Name must be at least 2 characters long.",
-      "emailRequired": "Please enter a valid email.",
-      "emailInvalid": "Please use an email from a known provider (Gmail, Outlook, Yahoo, iCloud, etc).",
-      "countryRequired": "Please enter your country.",
-      "termsRequired": "You must accept the terms to continue."
+      "emailRequired": "Please enter a valid email address.",
+      "countryRequired": "Please enter your country."
     },
-    "termsText": "I agree to receive promotional emails and authorize the use of my data for marketing purposes, in accordance with the Privacy Policy.",
+    "termsText": "I agree to receive promotional emails and authorize the use of my data for marketing purposes in accordance with the privacy policy.",
     "helpButton": "Having trouble filling out? Contact us",
     "helpEmail": "tentandodarcertonoyt@gmail.com"
   },
@@ -102,11 +100,15 @@
   },
   "languageSelector": {
     "pt": "Português",
-    "en": "English"
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "de": "Deutsch"
   },
   "cookies": {
     "title": "We use cookies",
-    "description": "We use cookies to enhance your experience on our website. By continuing to browse, you agree to our Privacy Policy.",
+    "description": "We use cookies to improve your experience on our website. By continuing to use, you agree to our privacy policy.",
     "accept": "Accept"
   },
   "siteTitle": "Pray Like Jesus"
