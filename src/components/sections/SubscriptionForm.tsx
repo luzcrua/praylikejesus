@@ -5,11 +5,11 @@ import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { createSubscriptionSchema, type SubscriptionFormData } from "@/schemas/subscriptionSchema";
-import { submitToMailchimp, type SubscriptionData } from "@/services/mailchimpService";
 import SubscriptionFormFields from "@/components/form/SubscriptionFormFields";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ShinyButton from "@/components/ShinyButton";
 import { Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const SubscriptionForm = () => {
   const { t } = useTranslation();
@@ -33,14 +33,12 @@ const SubscriptionForm = () => {
 
   useEffect(() => {
     if (showSuccessDialog) {
-      // Reset states when dialog opens
       setIsAudioLoading(true);
       setShowTelegramButton(false);
 
-      // Start timer for Telegram button
       const timer = setTimeout(() => {
         setShowTelegramButton(true);
-      }, 20000); // 10 seconds
+      }, 20000);
 
       return () => clearTimeout(timer);
     }
@@ -52,16 +50,39 @@ const SubscriptionForm = () => {
 
   const onSubmit = async (values: SubscriptionFormData) => {
     setIsSubmitting(true);
-    console.log("Enviando dados para o Mailchimp:", values);
+    console.log("Enviando dados para o Supabase:", values);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      const { error } = await supabase
+        .from('form_submissions')
+        .insert([
+          {
+            name: values.name,
+            email: values.email,
+            country: values.country
+          }
+        ]);
+
+      if (error) {
+        console.error("Erro ao salvar no Supabase:", error);
+        toast({
+          variant: "destructive",
+          title: t('form.error'),
+          description: t('form.errorMessage'),
+        });
+        return;
+      }
+
       trackFormSubmission(values);
       setShowSuccessDialog(true);
       form.reset();
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
+      toast({
+        variant: "destructive",
+        title: t('form.error'),
+        description: t('form.errorMessage'),
+      });
       
       trackEvent({
         action: 'form_error',
