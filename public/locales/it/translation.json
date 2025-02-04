@@ -1,8 +1,7 @@
 {
   "hero": {
-    "title": "Scopri Come <span class='text-neon-purple font-bold animate-pulse'>Pregare Come Gesù</span> e Trasforma la Tua Vita Spirituale",
-    "subtitle": "Ricevi preghiere esclusive <span class='text-neon-purple font-bold animate-pulse animate-shine'>100% GRATUITE</span> per connetterti profondamente con Dio",
-    "cta": "VOGLIO INIZIARE IL MIO PERCORSO DI PREGHIERA"
+    "title": "Scopri Come <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> e Trasforma la Tua Vita Spirituale",
+    "titleWords": ["PREGARE", "PENSARE", "FARE", "AIUTARE"]
   },
   "benefits": {
     "title": "Perché Pregare come Gesù?",

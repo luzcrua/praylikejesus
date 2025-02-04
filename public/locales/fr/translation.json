@@ -1,8 +1,7 @@
 {
   "hero": {
-    "title": "Découvrez Comment <span class='text-neon-purple font-bold animate-pulse'>Prier Comme Jésus</span> et Transformez Votre Vie Spirituelle",
-    "subtitle": "Recevez des prières exclusives <span class='text-neon-purple font-bold animate-pulse animate-shine'>100% GRATUITES</span> pour vous connecter profondément avec Dieu",
-    "cta": "JE VEUX COMMENCER MON PARCOURS DE PRIÈRE"
+    "title": "Découvrez Comment <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> et Transformez Votre Vie Spirituelle",
+    "titleWords": ["PRIER", "PENSER", "FAIRE", "AIDER"]
   },
   "benefits": {
     "title": "Pourquoi Prier comme Jésus ?",

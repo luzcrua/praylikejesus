@@ -1,8 +1,7 @@
 {
   "hero": {
-    "title": "Entdecken Sie, wie Sie <span class='text-neon-purple font-bold animate-pulse'>wie Jesus beten</span> und Ihr spirituelles Leben transformieren können",
-    "subtitle": "Erhalten Sie exklusive <span class='text-neon-purple font-bold animate-pulse animate-shine'>100% KOSTENLOSE</span> Gebete für eine tiefe Verbindung mit Gott",
-    "cta": "ICH MÖCHTE MEINE GEBETSREISE BEGINNEN"
+    "title": "Entdecken Sie, wie Sie <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> und Ihr spirituelles Leben transformieren können",
+    "titleWords": ["BETEN", "DENKEN", "TUN", "HELFEN"]
   },
   "benefits": {
     "title": "Warum wie Jesus beten?",

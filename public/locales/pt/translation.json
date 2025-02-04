@@ -1,6 +1,7 @@
 {
   "hero": {
-    "title": "Descubra Como <span class='text-neon-purple font-bold animate-pulse'>Orar Como Jesus</span> e Transforme Sua Vida Espiritual",
+    "title": "Descubra Como <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> e Transforme Sua Vida Espiritual",
+    "titleWords": ["ORAR", "PENSAR", "FAZER", "AJUDAR"],
     "subtitle": "Receba orações exclusivas <span class='text-neon-purple font-bold animate-pulse animate-shine'>100% GRATUITAS</span> para se conectar profundamente com Deus",
     "cta": "QUERO COMEÇAR MINHA JORNADA DE ORAÇÃO"
   },
