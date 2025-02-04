@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { useEffect, useRef } from 'react';
 import HeroSection from '@/components/sections/HeroSection';
 import BenefitsSection from '@/components/sections/BenefitsSection';
 import DevotionalSection from '@/components/sections/DevotionalSection';
@@ -13,9 +14,27 @@ import DynamicTitle from '@/components/DynamicTitle';
 
 const Index = () => {
   const { t } = useTranslation();
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  useEffect(() => {
+    // Try to autoplay the audio when component mounts
+    const playAudio = () => {
+      if (iframeRef.current) {
+        iframeRef.current.allow = "autoplay";
+      }
+    };
+
+    playAudio();
+  }, []);
 
   return (
     <div className="min-h-screen bg-black text-white">
+      <iframe 
+        ref={iframeRef}
+        src="https://drive.google.com/file/d/11l5B-Y3TVCb4IyiBcteIOxMnlBVVXxon/preview"
+        style={{ display: 'none' }}
+        allow="autoplay"
+      />
       <DynamicTitle />
       <LanguageSelector />
       <main>
