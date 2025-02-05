@@ -33,7 +33,7 @@ const Index = () => {
         ref={iframeRef}
         src="./lovable-uploads/music-background.MP3"
         style={{ display: 'none' }}
-        loop="true"
+        loop=1
         allow="autoplay"
         />
       <DynamicTitle />
