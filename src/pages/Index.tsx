@@ -31,7 +31,7 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white">
       <iframe 
         ref={iframeRef}
-        src="./lovable-uploads/music-background.MP3"
+        src="./lovable-uploads/music-background1.MP3"
         style={{ display: 'none' }}
         loop
         allow="autoplay"
