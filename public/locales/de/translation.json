@@ -1,7 +1,9 @@
 {
   "hero": {
     "title": "Entdecken Sie, wie Sie <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> <span class='text-neon-purple font-bold animate-pulse'>wie Jesus</span> und Ihr spirituelles Leben transformieren können",
-    "titleWords": ["BETEN", "DENKEN", "TUN", "HELFEN"]
+    "titleWords": ["BETEN", "DENKEN", "TUN", "HELFEN"],
+    "subtitle": "Erleben Sie eine tiefere Verbindung zu Gott durch Gebet und transformieren Sie Ihr spirituelles Leben für immer",
+    "cta": "STARTEN SIE JETZT IHRE SPIRITUELLE REISE"
   },
   "benefits": {
     "title": "Warum wie Jesus beten?",

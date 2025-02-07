@@ -1,7 +1,9 @@
 {
   "hero": {
     "title": "Découvrez Comment <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> <span class='text-neon-purple font-bold animate-pulse'>Comme Jésus</span> et Transformez Votre Vie Spirituelle",
-    "titleWords": ["PRIER", "PENSER", "FAIRE", "AIDER"]
+    "titleWords": ["PRIER", "PENSER", "FAIRE", "AIDER"],
+    "subtitle": "Vivez une connexion plus profonde avec Dieu par la prière et transformez votre vie spirituelle pour toujours",
+    "cta": "COMMENCER MON VOYAGE SPIRITUEL MAINTENANT"
   },
   "benefits": {
     "title": "Pourquoi Prier comme Jésus ?",

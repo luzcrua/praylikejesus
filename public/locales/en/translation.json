@@ -1,8 +1,9 @@
 {
   "hero": {
     "title": "Discover How to <span class='text-neon-purple font-bold animate-pulse typewriter-highlight'></span> <span class='text-neon-purple font-bold animate-pulse'>Like Jesus</span> and Transform Your Spiritual Life",
-    "titleWords": ["Pray", "Think", "Do", "Help"]
-   
+    "titleWords": ["Pray", "Think", "Do", "Help"],
+    "subtitle": "Experience a deeper connection with God through prayer and transform your spiritual life forever",
+    "cta": "START MY SPIRITUAL JOURNEY NOW"
   },
   "benefits": {
     "title": "Why Pray Like Jesus?",
