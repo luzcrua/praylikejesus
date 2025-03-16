@@ -26,7 +26,7 @@ const LanguageSelector = () => {
       <select
         value={i18n.language}
         onChange={(e) => changeLanguage(e.target.value)}
-        className="bg-blue-500 text-white text-sm focus:outline-none cursor-pointer"
+        className="bg-black-500 text-white text-sm focus:outline-none cursor-pointer"
       >
         <option value="">🌐</option>
         <option value="pt">🇧🇷</option>
